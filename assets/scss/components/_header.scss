@@ -14,7 +14,6 @@
   height: 36px;
 }
 
-
 // top header
 .buttonCloseMainMenu {
   position: absolute;
@@ -274,6 +273,7 @@
     .headerContactItem {
       color: $color1;
       font-size: 12px;
+      line-height: 16px;
     }
   }
 }
@@ -475,38 +475,34 @@
 // end bottom header
 
 /* Mobile & tablet: width <1024px */
-@media only screen and (max-width: 1023px){
-  .headerContactWrapper{
+@media only screen and (max-width: 1023px) {
+  .headerContactWrapper {
     display: none;
   }
-  .headerContactList{
+  .headerContactList {
     position: static !important;
-    flex-direction:column;
+    flex-direction: column;
     bottom: 30px;
     width: 300px;
     gap: 12px;
   }
-  .headerContactItem{
+  .headerContactItem {
     color: $color3 !important;
   }
 }
 
 /* Mobie: width < 740px */
 @media only screen and (max-width: 739px) {
-
 }
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-
 }
 
 /* PC Low */
-@media (min-width: 1024px) and (max-width: 1239px) { 
-
+@media (min-width: 1024px) and (max-width: 1239px) {
 }
 
 /* PC: width >= 1024px */
 @media only screen and (min-width: 1024px) {
-
 }
