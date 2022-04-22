@@ -1,0 +1,35 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+// mixins
+@import "../abstracts/mixins";
+// end mixins
+
+// fonts
+@import "../base/fonts";
+// end fonts
+
+// main slide 
+@import "../layouts/home/mainSlide";
+// end main slide 
+
+// welcome 
+@import "../layouts/home/welcome";
+// end welcome 
+
+// room 
+@import "../layouts/home/room";
+// end room
+
+// special 
+@import "../layouts/home/special";
+// end special 
+
+// discover 
+@import '../layouts/home/discover';
+// end discover 
+
+// moment 
+@import '../layouts/home/moment';
+// end moment 

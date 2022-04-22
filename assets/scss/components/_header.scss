@@ -1,0 +1,465 @@
+.wrapperHeader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color1;
+}
+
+// top header
+.buttonCloseMainMenu{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100vw;
+    height: 101vh;
+    background-color: rgba(255, 255, 255, 0.65);
+    transition: all .5s;
+    &.active{
+        left: 300px;
+    }
+}
+
+@media (min-width: 992px){
+    .buttonCloseMainMenu{
+        left: 100% !important;
+    }
+}
+.wrapperTopHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 6px 0;
+    
+}
+
+
+.containerLogoTopHeader {
+    display: block;
+    width: auto;
+    padding-top: 82px;
+    position: relative;
+    transition: all 0.5s;
+    .logoTopHeader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    &.fixed{
+        padding-top: 68px;
+    }
+}
+
+.wrapperNameTopHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .nameTopHeader {
+        
+        margin-bottom: 0;
+        .linkNameTopHeader{
+            font-family: $font1;
+            font-size: 20px;
+            line-height: 26px;
+            color: $color3;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+.listButtonTopHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapperButtonLanguageTopHeader{
+        position: relative;
+    }
+}
+
+.buttonLanguageTopHeader {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding-right: 15px;
+    z-index: 9;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        margin-top: 1px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $color2;
+        transition: all 0.5s;
+    }
+    &:hover {
+        &:after {
+            border-top-color: $color3;
+        }
+    }
+}
+
+.containerIconLanguageTopHeader{
+    position: relative;
+    width: 25px;
+    padding-top: 20px;
+    .iconLanguageTopHeader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        transition: all 0.5s;
+    }
+    .iconVn{
+        display: none;
+    }
+}
+
+.wrapperLanguageTopHeader{
+    display: none;
+    width: 150px;
+    min-width: 150px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    background-color: $color1;
+    border: .8px solid $color3;
+    z-index: 99;
+    .containerLanguageTopHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 15px;
+    }
+}
+
+.linkLanguageTopHeader{
+    display: block;
+    text-align: right;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 3px;
+    .text{
+        font-size: 12px;
+        line-height: 18px;
+        color: $color8;
+        padding: 2px 10px;
+        transition: all .5s;
+    }
+    .imageLinkLanguageTopHeader{
+        width: 22px;
+        height: 20px;
+    }
+    &:hover{
+        .text{
+            color: $color3;
+        }
+    }
+}
+
+.backgroundCloseLanguageTopHeader{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200vw;
+    height: 200vh;
+    z-index: 1;
+}
+
+
+.buttonMainMenuTopHeader {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: $color3;
+    margin-left: 20px;
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        color: $color1;
+    }
+
+    .iconHideMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapperButtonMainMenuTopHeader {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px){
+    .containerLogoTopHeader{
+        padding-top: 68px;
+    }
+}
+@media (max-width: 767.98px){
+    .wrapperNameTopHeader{
+        display: none;
+    }
+}
+@media (max-width: 575.98px){
+    .wrapperLanguageTopHeader{
+        width: 128px;
+        min-width: 128px;
+        .containerLanguageTopHeader{
+            padding-left: 10px;
+        }
+    }
+    .linkLanguageTopHeader{
+        .text{
+            font-size: 11px;
+            line-height: 18px;
+        }
+        .imageLinkLanguageTopHeader{
+            width: 20px;
+            height: 18px;
+        }
+    }
+}
+// end top header
+
+
+
+// bottom header
+// main menu
+.wrapperBottomHeader {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100%;
+        background-color: $color6;
+        z-index: -1;
+    }
+    
+}
+
+.wrapperButtonShowBookingBottomHeader{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    .buttonShowBookingBottomHeader{
+        font-size: 12px;
+        line-height: 20px;
+        color: $color1;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 3px 15px;
+        transition: all .5s;
+        background-color: $color3;
+        &:hover{
+            background-color: $color4;
+        }
+    }
+}
+
+.listMainMenu {
+    justify-content: center;
+    padding: 0;
+    .itemMainMenu {
+        &:last-child {
+            .linkMainMenu {
+                &:after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.haveSubMenu{
+    .linkMainMenu{
+        svg{
+            display: none;
+            width: 12px;
+            height: 12px;
+            color: $color3;
+            transition: all .5s;
+        }
+        &:hover{
+            svg{
+                color: $color1;
+            }
+        }
+    }
+    
+}
+
+.linkMainMenu {
+    display: block;
+    font-size: 12px;
+    line-height: 50px;
+    font-weight: 500;
+    padding: 0 15px;
+    position: relative;
+    color: $color3;
+    text-decoration: none;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    &:hover {
+        color: $color1;
+        background-color: $color3;
+        &:after {
+            background-color: transparent;
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 0.8px;
+        height: 18px;
+        background-color: $color7;
+        transition: all 0.5s;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrapperBottomHeader {
+        min-width: 300px;
+        height: 101vh;
+        position: absolute;
+        top: 100%;
+        left: -350px;
+        overflow-y: scroll;
+        transition: all .5s;
+        &:before {
+            top: 0;
+            left: 0;
+            transform: none;
+            width: 100%;
+            height: 100%;
+            background-color: $color6;
+        }
+        &.active{
+            left: 0;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+    }
+    .wrapperButtonShowBookingBottomHeader{
+        display: none !important;
+    }
+    .listMainMenu {
+        flex-direction: column;
+        justify-content: start;
+        background-color: $color6;
+        padding-bottom: 122px;
+        .itemMainMenu {
+            width: 100%;
+        }
+    }
+    .haveSubMenu{
+        .linkMainMenu{
+            justify-content: space-between;
+            svg{
+                display: block;
+            }
+        }
+        
+    }
+    .linkMainMenu {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        &:after {
+            background-color: transparent;
+        }
+    }
+}
+// end main menu
+
+// sub menu
+.wrapperSubMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.listSubMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    background-color: $color6;
+    .itemSubMenu {
+        width: 100%;
+    }
+}
+
+.linkSubMenu {
+    display: block;
+    padding: 0 30px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+    color: $color3;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    &:hover {
+        color: $color1;
+        background-color: $color3;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapperSubMenu {
+        transform: translateX(-30px);
+    }
+    
+}
+@media (max-width: 991.98px){
+    .wrapperSubMenu{
+        position: static;
+    }
+    .linkSubMenu{
+        padding-left: 30px;
+    }
+    .listSubMenu{
+        background-color: $color5;
+    }
+}
+// end sub menu
+// end bottom header

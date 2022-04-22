@@ -1,0 +1,226 @@
+.wrapperFooter{
+    border-top: 1px solid $color7;
+    padding-top: 30px;
+    overflow-x: hidden;
+}
+
+.wrapperFollow {
+    margin-bottom: 30px;
+    .nameFollow {
+        font-size: 30px;
+        line-height: 36px;
+        color: $color3;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .descriptionFollow {
+        font-size: 18px;
+        line-height: 26px;
+        color: $color8;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.listSocialFollow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .itemSocialFollow {
+        position: relative;
+        width: 60px;
+        padding-top: 60px;
+        .iconSocialFollow {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 991.98px){
+    .wrapperFollow{
+        margin-bottom: 15px;
+        .nameFollow{
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+        .descriptionFollow{
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .wrapperFollow{
+        .nameFollow{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .descriptionFollow{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .listSocialFollow {
+        .itemSocialFollow {
+            width: 45px;
+            padding-top: 45px;
+        }
+    }
+}
+
+.wrapperNavigationFooter {
+    position: relative;
+    margin-bottom: 30px;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100%;
+        background-color: $color7;
+        z-index: -1;
+    }
+}
+
+.listNavigationFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkNavigationFooter {
+    display: block;
+    font-size: 16px;
+    line-height: 100px;
+    color: $color8;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all .5s;
+    &:hover{
+        color: $color3;
+    }
+}
+
+.wrapperBottomFooter{
+    margin-bottom: 20px;
+    .nameBottomFooter{
+        font-size: 24px;
+        font-weight: 300;
+        color: $color2;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        color: $color8;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
+
+.wrapperListLinkBottomFooter{
+    text-align: center;
+    .linkBottomFooter{
+        display: inline-block;
+        font-size: 12px;
+        line-height: 12px;
+        text-decoration: none;
+        color: $color8 !important;
+        padding: 0 10px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: .8px;
+            height: 100%;
+            background-color: $color8;
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+    }
+    .noHover{
+        cursor: unset;
+    }
+    .linkHightlight{
+        color: $color3 !important;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.wrapperCopyright{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-size: 12px;
+        line-height: 20px;
+        color: $color2;
+        text-align: center;
+        a{
+            text-decoration: none;
+            transition: all .5s;
+        }
+    }
+}
+
+@media (max-width: 991.98px){
+    .wrapperBottomFooter{
+        margin-bottom: 15px;
+    }
+    .wrapperCopyright{
+        margin-bottom: 60px;
+    }
+    .wrapperNavigationFooter{
+        margin-bottom: 20px;
+    }
+    .wrapperBottomFooter{
+        .nameBottomFooter{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 767.98px){
+    .wrapperListLinkBottomFooter{
+        margin-bottom: 8px;
+    }
+    .linkNavigationFooter{
+        font-size: 14px;
+        line-height: 80px;
+    }
+}
+@media (max-width: 575.98px){
+    .linkNavigationFooter{
+        font-size: 12px;
+        padding: 0 5px;   
+        line-height: 68px;     
+    }
+    .wrapperBottomFooter{
+        .nameBottomFooter{
+            font-size: 20px;
+        }
+    }
+    .wrapperCopyright{
+        flex-direction: column;
+    }
+}
