@@ -211,42 +211,42 @@
 			{
 				"images": "images/introduction/room-1.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "javascript:void(0);",
+				"link": "room-detail.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-2.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "javascript:void(0);",
+				"link": "room-detail.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-3.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "javascript:void(0);",
+				"link": "room-detail.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-4.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "javascript:void(0);",
+				"link": "room-detail.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-5.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "javascript:void(0);",
+				"link": "room-detail.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-6.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "javascript:void(0);",
+				"link": "room-detail.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			}
@@ -623,51 +623,7 @@
 			"breadcrumb": {
 				"url_img": "images/banner/banner-slide-1.jpg",
 				"menu": []
-			},
-			"rooms": [
-				{
-					"images": "images/introduction/room-1.jpg",
-					"kindOfRoom": "Standard Room",
-					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
-					"price": "4.000.000",
-					"link": "room-detail.html"
-				},
-				{
-					"images": "images/introduction/room-2.jpg",
-					"kindOfRoom": "Standard Room",
-					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
-					"price": "4.000.000",
-					"link": "room-detail.html"
-				},
-				{
-					"images": "images/introduction/room-3.jpg",
-					"kindOfRoom": "Standard Room",
-					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
-					"price": "4.000.000",
-					"link": "room-detail.html"
-				},
-				{
-					"images": "images/introduction/room-4.jpg",
-					"kindOfRoom": "Standard Room",
-					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
-					"price": "4.000.000",
-					"link": "room-detail.html"
-				},
-				{
-					"images": "images/introduction/room-5.jpg",
-					"kindOfRoom": "Standard Room",
-					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
-					"price": "4.000.000",
-					"link": "room-detail.html"
-				},
-				{
-					"images": "images/introduction/room-6.jpg",
-					"kindOfRoom": "Standard Room",
-					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
-					"price": "4.000.000",
-					"link": "room-detail.html"
-				}
-			]
+			}
 		},
 		"page_roomDetail": {
 			"title_page": "Room Detail",

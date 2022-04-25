@@ -351,6 +351,10 @@
   .wrapperButtonRoom {
     padding-top: 15px;
   }
+
+  .wrapperRoom {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 575.98px) {
   .wrapperNameRoom {
