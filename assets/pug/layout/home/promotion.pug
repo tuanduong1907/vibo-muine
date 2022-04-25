@@ -1,0 +1,30 @@
+// promotion list
+.wrapPromotion.wrapContent1.bgColor2
+    .container-xl.containerItem 
+        .contentItem
+            +render_title('Get it now', 'Hot promotion')
+
+            .row.listItem.row1.justify-content-center
+                each item in data.promotion
+                    .col1.col-sm-6.col-lg-12.colItem
+                        .itemContent
+                            .row.rowList.row3
+                                .col-lg-6.colImg.col3
+                                    .contentCol 
+                                        .wrapImg
+                                            a.wrapImgResize.img16And9(href= item.link title= item.title)
+                                                img(src= item.img alt= item.title)
+                                |
+                                |
+                                .col-lg-6.colText.col3.align-self-center
+                                    .contentCol
+                                        h4.titleItem.titleMain 
+                                            a.linkTitleItem1.linkTitle(href= item.link title= item.title)= item.title
+
+                                        p.sumary= item.summary
+
+                                        a.btnViewMore.btn2(href='javascript:void(0);' title='View more') 
+                                            | View more
+                                            svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512')
+                                                path(fill='currentColor' d='M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z')
+// end promotion list

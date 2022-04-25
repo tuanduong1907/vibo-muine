@@ -1,0 +1,185 @@
+.wrapperMainSlide {
+  margin-top: 144px;
+}
+
+.wrapperImageMainSlide {
+  width: 100%;
+  min-height: 196px;
+  padding-top: calc(100vh - 180px);
+  position: relative;
+}
+.wrapperImageMainSlide .imageMainSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .wrapperImageMainSlide {
+    background-position: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .wrapperMainSlide {
+    margin-top: 72px;
+  }
+
+  .wrapperImageMainSlide {
+    padding-top: calc(100vh - 265px);
+  }
+}
+@media (max-width: 575.98px) {
+  .wrapperImageMainSlide {
+    padding-top: 196px;
+  }
+}
+.showMainSlide {
+  position: relative;
+}
+.showMainSlide .slideArrowPrimary {
+  top: 50%;
+  background-color: transparent;
+}
+.showMainSlide .slideArrowPrimary:before {
+  padding-top: 16px;
+}
+.showMainSlide .slideArrowPrimary.prevArrow {
+  left: 15px;
+}
+.showMainSlide .slideArrowPrimary.prevArrow:before {
+  border-right-color: #0f77be;
+  border-width: 4px;
+}
+.showMainSlide .slideArrowPrimary.nextArrow {
+  right: 15px;
+}
+.showMainSlide .slideArrowPrimary.nextArrow:before {
+  border-left-color: #0f77be;
+  border-width: 4px;
+}
+
+.contact .wrapperTitleSection {
+  padding-block: 40px;
+}
+.contact .contactContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+  padding-bottom: 40px;
+}
+.contact .contactContentItem:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contact .contactContentItem:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact .contactIntroduce p {
+  margin-bottom: 0;
+}
+.contact .contactInfo .contactInfoItem {
+  margin-bottom: 10px;
+}
+.contact .contactInfo .contactInfoItem:last-child {
+  margin-bottom: 0;
+}
+.contact .contactInfo .contactInfoItem svg {
+  height: 14px;
+  fill: #0f77be;
+  margin-right: 8px;
+}
+.contact .contactSocialList {
+  display: flex;
+  gap: 0 10px;
+}
+.contact .contactSocialList .iconSocial {
+  height: 40px;
+}
+.contact .contactFormWrapper {
+  width: 100%;
+}
+.contact .contactFormWrapper .contactForm {
+  width: 100%;
+}
+.contact .contactFormWrapper .contactForm .contactFormItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.contact .contactFormWrapper .contactForm .contactFormItem .formItem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact .contactFormWrapper .contactForm .contactFormItem .formItem:focus {
+  border: 1px solid #0f77be;
+}
+.contact .contactFormWrapper .contactForm .btnFormContact {
+  display: block;
+  margin-left: auto;
+}
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .contactContentWrapper {
+    flex-direction: column;
+  }
+  .contactContentWrapper .googleMap {
+    width: 100%;
+  }
+}
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .contact .contactContentWrapper {
+    padding-bottom: 30px;
+  }
+  .contact .wrapperTitleSection {
+    padding-block: 15px;
+  }
+  .contact .contactContentItem:first-child {
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .contact .contactContentItem:last-child {
+    gap: 15px;
+  }
+  .contact .btnFormContact {
+    width: 100%;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .contact .contactContentWrapper {
+    padding-bottom: 30px;
+  }
+  .contact .wrapperTitleSection {
+    padding-block: 30px;
+  }
+  .contact .contactContentItem:first-child {
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .contact .contactContentItem:last-child {
+    gap: 15px;
+  }
+}
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .contact .contactContentWrapper .googleMap {
+    width: 100%;
+  }
+  .contact .contactContentItem:first-child {
+    width: 300px;
+  }
+  .contact .contactContentItem:last-child {
+    width: 100%;
+  }
+}
+/* PC: width >= 1024px */

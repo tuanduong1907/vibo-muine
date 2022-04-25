@@ -1,0 +1,161 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+// mixins
+@import "../abstracts/mixins";
+// end mixin
+
+// main slide
+@import "../layouts/mainSlide";
+// end main slide
+
+.contact {
+  .wrapperTitleSection {
+    padding-block: 40px;
+  }
+  .contactContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 40px;
+    padding-bottom: 40px;
+  }
+  .contactContentItem {
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  .contactIntroduce {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .contactInfo {
+    .contactInfoItem {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      svg {
+        height: 14px;
+        fill: $color3;
+        margin-right: 8px;
+      }
+    }
+  }
+  .contactSocialList {
+    display: flex;
+    gap: 0 10px;
+    .iconSocial {
+      height: 40px;
+    }
+  }
+  .contactFormWrapper {
+    width: 100%;
+    .contactForm {
+      width: 100%;
+      .contactFormItem {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .formItem {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          &:focus {
+            border: 1px solid $color3;
+          }
+        }
+      }
+      .btnFormContact {
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .contactContentWrapper {
+    flex-direction: column;
+    .googleMap {
+      width: 100%;
+    }
+  }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .contact {
+    .contactContentWrapper {
+      padding-bottom: 30px;
+    }
+    .wrapperTitleSection {
+      padding-block: 15px;
+    }
+    .contactContentItem {
+      &:first-child {
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+      &:last-child {
+        gap: 15px;
+      }
+    }
+    .btnFormContact{
+      width: 100%;
+    }
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .contact {
+    .contactContentWrapper {
+      padding-bottom: 30px;
+    }
+    .wrapperTitleSection {
+      padding-block: 30px;
+    }
+    .contactContentItem {
+      &:first-child {
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+      &:last-child {
+        gap: 15px;
+      }
+    }
+  }
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .contact {
+    .contactContentWrapper {
+      .googleMap {
+        width: 100%;
+      }
+    }
+    .contactContentItem{
+      &:first-child{
+        width: 300px;
+      }
+      &:last-child{
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 1024px) {
+}

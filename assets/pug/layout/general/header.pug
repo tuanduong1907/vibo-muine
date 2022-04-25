@@ -1,0 +1,99 @@
+// header
+.wrapperHeader
+    // Header Contact
+    .headerContactWrapper
+    .containerHeader.container
+        // top header
+        .wrapperTopHeader
+            .wrapperLogoTopHeader
+                a.containerLogoTopHeader(href='index.html' title='Vipol Muine Hotel')
+                    img.logoTopHeader(src='images/logo/logo.png' alt='Logo Vipol Muine Hotel')
+            .wrapperNameTopHeader
+                h1.nameTopHeader
+                    a.linkNameTopHeader(href='index.html' title='Vipol Muine Hotel') Vipol Muine Hotel
+            .wrapperListButtonTopHeader
+                ul.listButtonTopHeader
+                    li.wrapperButtonLanguageTopHeader
+                        a.buttonLanguageTopHeader(href='javascript:void(0);' title='Language')
+                            .containerIconLanguageTopHeader
+                                img.iconLanguageTopHeader.iconVn(src='images/icon/flag_vn.svg' alt='Vietnamese Flag')
+                                img.iconLanguageTopHeader.iconEn(src='images/icon/flag_en.svg' alt='English Flag')
+                                img.iconLanguageTopHeader.iconVn(src='images/icon/flag_russia.svg' alt='Russian Flag')
+                        .wrapperLanguageTopHeader
+                            .containerLanguageTopHeader
+                                .languageTopHeader
+                                    a.linkLanguageTopHeader(href='javascript:void(0);' title='Vietnamese')
+                                        span.text Tiếng Việt
+                                        img.imageLinkLanguageTopHeader(src='images/icon/flag_vn.svg' alt='Vietnamese Flag')
+                                .languageTopHeader
+                                    a.linkLanguageTopHeader(href='javascript:void(0);' title='English')
+                                        span.text English
+                                        img.imageLinkLanguageTopHeader(src='images/icon/flag_en.svg' alt='English Flag')
+                                .languageTopHeader
+                                    a.linkLanguageTopHeader(href='javascript:void(0);' title='Russian')
+                                        span.text Россия
+                                        img.imageLinkLanguageTopHeader(src='images/icon/flag_russia.svg' alt='Russian Flag')
+                        .backgroundCloseLanguageTopHeader
+                    li.wrapperButtonMainMenuTopHeader
+                        a.buttonMainMenuTopHeader(href='javascript:void(0);' title='Menu')
+                            svg.iconShowMenu(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512')
+                                path(fill='currentColor' d='M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z')
+                            svg.iconHideMenu(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 352 512')
+                                path(fill='currentColor' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z')
+        // end top header
+        // bottom header
+        .wrapperBottomHeader
+            .wrapperMainMenu
+                ul.listMainMenu.navbar
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='index.html' title='Home') Home
+                    li.itemMainMenu.nav-item.haveSubMenu
+                        a.linkMainMenu(href='javascript:void(0);' title='Rooms')
+                            | Rooms
+                            svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512')
+                                path(fill='currentColor' d='M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z')
+                        .wrapperSubMenu
+                            ul.listSubMenu
+                                li.itemSubMenu
+                                    a.linkSubMenu(href='javascript:void(0);' title='Standard Room')
+                                        | Standard Room
+                                li.itemSubMenu
+                                    a.linkSubMenu(href='javascript:void(0);' title='Superior Room')
+                                        | Superior Room
+                                li.itemSubMenu
+                                    a.linkSubMenu(href='javascript:void(0);' title='Deluxe Room')
+                                        | Deluxe Room
+                                li.itemSubMenu
+                                    a.linkSubMenu(href='javascript:void(0);' title='Executive Room')
+                                        | Executive Room
+                                li.itemSubMenu
+                                    a.linkSubMenu(href='javascript:void(0);' title='Junior Suite')
+                                        | Junior Suite
+                                li.itemSubMenu
+                                    a.linkSubMenu(href='javascript:void(0);' title='Suite')
+                                        | Suite
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='javascript:void(0);' title='Special') Special
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='javascript:void(0);' title='Restaurant & Bar') Restaurant
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='javascript:void(0);' title='Restaurant & Bar') Pool Bar
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='javascript:void(0);' title='Restaurant & Bar') Sky Bar
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='javascript:void(0);' title='Meetings & Events') Meetings & Events
+                    li.itemMainMenu.nav-item
+                        a.linkMainMenu(href='contact.html' title='Contact') Contact
+                ul.container.headerContactList
+                    li.headerContactItem
+                        | Phone: +84 123456789
+                    li.headerContactItem
+                        | Fax: +84 123456789
+                    li.headerContactItem
+                        | Address: 29A Nguyen Dinh Chieu, Ham Tien Ward, City. Phan Thiet, Binh Thuan Province
+            .wrapperButtonShowBookingBottomHeader
+                a.buttonShowBookingBottomHeader(href='javascript:void(0);' title='Book A Room') Book A Room
+        // end bottom header
+        .buttonCloseMainMenu
+
+// end header

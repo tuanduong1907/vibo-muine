@@ -1,0 +1,31 @@
+include ../mixin/mixin
+
+- var data_page = data.page_contact
+
+doctype html
+html(lang='vi')
+    head
+        +head_setting(data_page)
+    body
+        include ../layout/general/header
+        |
+        |
+        .wrapMain
+            include ../layout/home/SlideMain
+            |
+            |
+            include ../layout/home/Booking
+            |
+            |
+            include ../layout/contact/ContactInfor
+            |
+            |
+        |
+        |
+        include ../layout/general/footer
+        |
+        |
+        include ../layout/home/LinkSocial
+        |
+        |
+        include ../layout/home/ButtonScroll

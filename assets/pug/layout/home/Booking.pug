@@ -1,0 +1,130 @@
+// Booking
+
+.wrapperBooking
+    .containerBooking.container
+        .wrapperButtonShowBooking
+            a.buttonShowBooking(href='javascript:void(0);' title='Book A Room') Book A Room
+        .contentBooking
+            form.formBooking(action='javascript:void(0);')
+                .wrapperCheckInOut
+                    label#textCheckIn.textDatepicker(for='checkIn')
+                        span Check In
+                        img(src='images/icon/calendar_white.svg' alt='calendar icon')
+                    input#checkIn.inputCheckInOut.haveDatepicker(type='text')
+                .wrapperCheckInOut
+                    label#textCheckOut.textDatepicker(for='checkOut')
+                        span Check Out
+                        img(src='images/icon/calendar_white.svg' alt='calendar icon')
+                    input#checkOut.inputCheckInOut.haveDatepicker(type='text')
+                .wrapperSelectBooking
+                    select#adultsNumber.seclectBooking(name='adults')
+                        option(value='0') Adults
+                        option(value='1') 1
+                        option(value='2') 2
+                        option(value='3') 3
+                        option(value='4') 4
+                .wrapperSelectBooking
+                    select#childrenNumber.seclectBooking(name='childrenNumber')
+                        option(value='other') Children
+                        option(value='0') 0
+                        option(value='1') 1
+                        option(value='2') 2
+                        option(value='3') 3
+                input.buttonSubmitBooking(type='submit' value='Book Now' name='booking')
+
+// popup booking
+
+.wrapperPopupBooking
+    a.buttonClosePopupBooking(href='javascript:void(0);' title='Close Book A Room')
+        svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 352 512')
+            path(fill='currentColor' d='M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z')
+    .containerPopupBooking
+        h4.titlePopupBooking Booking a room
+        .contentPopupBooking
+            form.formPopupBooking(action='javascript:void(0);')
+                .containerFormPopupBooking.row
+                    .wrapperInputPopupBooking.col-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512')
+                                    path(fill='currentColor' d='M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z')
+                            input#textPopupCheckIn.inputPopupBooking.haveDatepicker(type='text' readonly='readonly' placeholder='Check-in')
+                    .wrapperInputPopupBooking.col-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512')
+                                    path(fill='currentColor' d='M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z')
+                            input#textPopupCheckOut.inputPopupBooking.haveDatepicker(type='text' readonly='readonly' placeholder='Check-out')
+                    .wrapperInputPopupBooking.col-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 512')
+                                    path(fill='currentColor' d='M96 0c35.346 0 64 28.654 64 64s-28.654 64-64 64-64-28.654-64-64S60.654 0 96 0m48 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H48c-26.51 0-48 21.49-48 48v136c0 13.255 10.745 24 24 24h16v136c0 13.255 10.745 24 24 24h64c13.255 0 24-10.745 24-24V352h16c13.255 0 24-10.745 24-24V192c0-26.51-21.49-48-48-48z')
+                            input.inputPopupBooking(type='number' placeholder='Adults')
+                    .wrapperInputPopupBooking.col-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512')
+                                    path(fill='currentColor' d='M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z')
+                            input.inputPopupBooking(type='number' placeholder='Children')
+                    .wrapperInputPopupBooking.col-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512')
+                                    path(fill='currentColor' d='M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z')
+                            input.inputPopupBooking(type='number' placeholder='Bed')
+                    .wrapperSelectPopupBooking.col-6
+                        .containerSelectPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512')
+                                    path(fill='currentColor' d='M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z')
+                            select#popupRoom.seclectPopupBooking(name='popupRoom')
+                                option(value='1') Standard Room
+                                option(value='2') Superior Room
+                                option(value='3') Deluxe Room
+                                option(value='4') Executive Room
+                                option(value='5') Junior Suite
+                                option(value='6') Suite
+                    .wrapperInputPopupBooking.col-12.col-md-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512')
+                                    path(fill='currentColor' d='M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 400H48V80h480v352zM208 256c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zM360 320h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z')
+                            input.inputPopupBooking(type='text' placeholder='Full name')
+                    .wrapperInputPopupBooking.col-12.col-md-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(fill='currentColor' d='M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z')
+                            input.inputPopupBooking(type='text' placeholder='Email')
+                    .wrapperInputPopupBooking.col-12.col-md-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(fill='currentColor' d='M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z')
+                            input.inputPopupBooking(type='number' placeholder='Phone')
+                    .wrapperInputPopupBooking.col-12.col-md-6
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512')
+                                    path(fill='currentColor' d='M448 348.106V80c0-26.51-21.49-48-48-48H48C21.49 32 0 53.49 0 80v351.988c0 26.51 21.49 48 48 48h268.118a48 48 0 0 0 33.941-14.059l83.882-83.882A48 48 0 0 0 448 348.106zm-128 80v-76.118h76.118L320 428.106zM400 80v223.988H296c-13.255 0-24 10.745-24 24v104H48V80h352z')
+                            input.inputPopupBooking(type='text' placeholder='Note')
+                    .wrapperInputPopupBooking.securityCode.col-5
+                        .containerInputPopupBooking
+                            .wrapperIconPopupBooking
+                                svg.iconPopupBooking(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(fill='currentColor' d='M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z')
+                            input.inputPopupBooking(type='text' placeholder='Security code')
+                    .wrapperImageSecurityCode.col-5
+                        .containerImageSecurityCode
+                            img.imageSecurityCode(src='images/introduction/capcha.jpg' alt='')
+                            a.buttonRefresh(href='javascript:void(0);')
+                                img.iconRefresh(src='images/icon/icon-refresh.png' alt='')
+                .wrapperButtonSubmidPopupBooking
+                    input.buttonSubmitPopupBooking(type='submit' value='Book now')
+.backgroundCLosePopupBooking
+
+// end popup booking
+
+
+// end Booking
