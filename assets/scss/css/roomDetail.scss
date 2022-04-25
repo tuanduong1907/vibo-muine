@@ -8,4 +8,471 @@
 
 // end main slide
 
-@import '../layouts/breadcrumb';
+@import "../layouts/breadcrumb";
+
+@import "../components/button";
+
+@import "../vendors/slick";
+
+@import "../components/wrapImgResize";
+
+// room
+@import "../layouts/room";
+// end room
+
+.btnSlideType1 {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 800;
+  @include transition(0.5s);
+  display: inline-block;
+  text-align: center;
+  @include translate(0, -50%);
+  @include transition(0.5s);
+  color: $color1;
+
+  svg {
+    width: 16px;
+    height: 30px;
+    display: block;
+  }
+
+  &.left {
+    left: 15px;
+  }
+
+  &.right {
+    right: 15px;
+  }
+
+  &:hover {
+    color: $color3;
+  }
+}
+.roomDetailWrapper {
+  // display: flex;
+  margin-top: 40px;
+  .roomDetailRelatedWrapper {
+    // width: 300px;
+    // display: block;
+  }
+  .roomDetailSlide {
+    width: 100%;
+    .wrapSlideMainImg {
+      width: 100%;
+      .btnSlide {
+        background-color: $color3;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+
+        &:hover {
+          background-color: $color1;
+        }
+
+        svg {
+          display: inline-block;
+          width: 10px;
+          height: 40px;
+        }
+
+        &.left {
+          left: 0;
+        }
+
+        &.right {
+          right: 0;
+        }
+      }
+    }
+
+    .wrapSlideCtrlImg {
+      .itemSlide {
+        width: 100%;
+        .wrapImgResize {
+          cursor: pointer;
+          height: 55px;
+          width: 100%;
+          img {
+            @include opacity(0.4);
+            @include transition(0.5s);
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        &.slick-center {
+          .wrapImgResize {
+            img {
+              @include opacity(1);
+            }
+          }
+        }
+
+        &:hover {
+          .wrapImgResize {
+            img {
+              @include opacity(1);
+            }
+          }
+        }
+      }
+    }
+
+    .titleInfoDetail {
+      margin-top: 30px;
+      color: $color2;
+
+      &::after {
+        background-color: $color3;
+      }
+    }
+
+    .wrapTextDetail {
+      p {
+        margin: 15px 0 0 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        color: $color3;
+        @include transition(0.5s);
+        text-decoration: underline;
+
+        &:hover {
+          color: $color15;
+        }
+      }
+    }
+
+    .stopMoveSlide {
+      .slick-track {
+        left: 0 !important;
+        display: table;
+        margin: auto;
+        top: 0 !important;
+        @include transform(unset !important);
+        @include transform(none !important);
+      }
+    }
+    .roomDetailSlideImages {
+      width: 100%;
+      .wrapSlideCtrlImg {
+        .contentImg {
+          padding: 2px 1px;
+        }
+      }
+
+      .wrapSlideMainImg {
+        cursor: pointer;
+      }
+    }
+
+    .wrapImgResize.img16And9 {
+      height: 500px;
+    }
+
+    .slick-slide {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .roomDetailTitleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .roomDetailContentWrapper {
+    display: flex;
+    margin-top: 15px;
+    gap: 0 30px;
+    .roomDetailContentItem {
+      &:first-child {
+        width: 70%;
+      }
+      &:last-child {
+        flex: 1;
+      }
+      .roomDetailDesc {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .roomDetailSubDesc {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .roomDetailDescText {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .roomDetalFacilitiesWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .roomDetalFacilitiesList {
+          flex: 1;
+          .roomDetalFacilitiesItem {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .roomDetailInfo {
+        padding: 20px;
+        background-color: $color1;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .roomDetailInfoList {
+          .roomDetailInfoItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.wrapperRoom {
+  margin-top: 40px;
+}
+
+.wrapperDescriptionRoom {
+  padding-top: 20px;
+  .descriptionRoom {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color8;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
+
+.wrapperListRoom {
+  padding-top: 16px;
+}
+.listRoom {
+  margin: 0;
+  .itemRoom {
+    padding: 0;
+    .containerItemRoom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $color7;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      &:hover {
+        .wrapperImageRoom {
+          .imageRoom {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapperImageRoom {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  .imageRoom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 108%;
+    object-fit: cover;
+    transition: all 0.5s;
+  }
+}
+
+.wrapperNameRoom {
+  cursor: pointer;
+  width: 190px;
+  min-height: 130px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -65px;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+  .nameRoom {
+    text-align: center;
+    margin-bottom: 0;
+    .linkNameRoom {
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 26px;
+      color: $color1;
+      text-transform: capitalize;
+      font-weight: 400;
+      max-width: 180px;
+    }
+  }
+
+  &.backgroundColor1 {
+    background-color: $color3;
+  }
+  &.backgroundColor2 {
+    background-color: $color4;
+  }
+  &.backgroundColor3 {
+    background-color: $color3;
+  }
+
+  &:hover {
+    background-color: $color4;
+  }
+}
+
+.wrapperTextRoom {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color2;
+    text-align: center;
+    margin-bottom: 0;
+    @include splitText(3, 66px);
+  }
+}
+
+.wrapperPriceRoom {
+  margin-left: auto;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  .priceRoom {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+    color: $color13;
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+    &.haveDiscount {
+      display: inline-block;
+      color: $color8;
+      font-size: 16px;
+      margin-left: auto;
+      &:after {
+        content: " ";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 100%;
+        border-top: 12px solid;
+        border-top-width: 1px;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-6deg) translateY(-50%);
+      }
+    }
+  }
+}
+
+.wrapperButtonRoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  .buttonPrimary {
+    margin-right: 10px;
+    &:hover {
+      color: $color1;
+      background-color: $color3;
+    }
+  }
+  .buttonPrimary-outline {
+    &:hover {
+      color: $color1;
+      background-color: $color3;
+      border-color: $color3;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .wrapperDescriptionRoom {
+    .descriptionRoom {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .wrapperPriceRoom {
+    padding-top: 15px;
+  }
+
+  .wrapperButtonRoom {
+    padding-top: 15px;
+  }
+  .wrapperRoom {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wrapperNameRoom {
+    min-height: 80px;
+    margin-top: -40px;
+    .nameRoom {
+      .linkNameRoom {
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+      }
+    }
+  }
+  .wrapperTextRoom {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .wrapperPriceRoom {
+    .priceRoom {
+      font-size: 18px;
+      &.haveDiscount {
+        font-size: 14px;
+      }
+    }
+  }
+  .wrapperButtonRoom {
+    .buttonPrimary {
+      font-size: 12px;
+      padding: 15px 25px;
+    }
+    .buttonPrimary-outline {
+      font-size: 12px;
+      padding: 14px 24px;
+    }
+  }
+}

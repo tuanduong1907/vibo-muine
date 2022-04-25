@@ -1,25 +1,101 @@
-.roomDetailSlideWrapper.container
-    .roomDetailSlideMain
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-1.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-2.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-3.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-4.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-5.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-6.jpg", alt="")
-    .roomDetailSlideList
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-2.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-3.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-4.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-5.jpg", alt="")
-        .roomDetailSlideItem
-            img(src="../../../images/introduction/room-6.jpg", alt="")
+.roomDetailWrapper.container
+    .row.rowItem 
+        .col-lg-4
+            ul.listRoom.row
+                each item in data.rooms
+                    li.itemRoom.col-md-12.col-xl-12
+                        .containerItemRoom
+                            .wrapperImageRoom
+                                a.linkImageRoom(href= item.link title='Image Room')
+                                    img.imageRoom(src= item.images alt='Room')
+                            .wrapperNameRoom.backgroundColor1
+                                h3.nameRoom
+                                    a.linkNameRoom(href= item.link title='Standard Room') Standard Room
+                            .wrapperTextRoom
+                                p= item.sumary
+                            .wrapperPriceRoom
+                                p.priceRoom.haveDiscount
+                                    = item.priceOld
+                                    span VNĐ
+                                p.priceRoom
+                                    = item.priceCurrent
+                                    span VNĐ
+                            .wrapperButtonRoom
+                                a.buttonPrimary(href= item.link title='Room Detail')
+                                    | See
+                                    | More
+                                a.buttonPrimary-outline(href= item.link title='Book Now')
+                                    | Book
+                                    | Now
+        .col-lg-8.colImg
+            .wrapSlideMainImg
+                .showSlideMainImg 
+                    each item in data.rooms
+                        .itemSlide(data-src= item)
+                            .contentImg 
+                                .wrapImgResize.img16And9 
+                                    img(src= item.images)
+
+            .wrapSlideCtrlImg
+                .showSlideCtrlImg 
+                    each item in data.rooms
+                        .itemSlide
+                            .contentImg 
+                                .wrapImgResize.img16And9 
+                                    img(src= item.images)
+            .roomDetailTitleWrapper 
+                h2.roomDetailTitle Standard Room
+                a.button(href="javascript:void(0);")
+                    | Book
+                    | Now
+            .roomDetailContentWrapper
+                .roomDetailContentItem
+                    .roomDetailDescWrapper 
+                        h3.roomDetailDesc Description
+                        h4.roomDetailSubDesc Spend Great Time in Our Hotel!
+                        p.roomDetailDescText Consectetur adipiscing elit. Vivamus nec augue ac dui sodales euismod. 
+                                            |Suspendisse at dui sit amet felis commodo dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                            | per inceptos himenaeos. Integer commodo eleifend erat, vitae tincidunt urna volutpat et. Mauris laoreet, sem ut sodales
+                                            | sodales, massa turpis posuere lectus, non aliquet massa nisl ac orci.
+                        p.roomDetailDescText Consectetur adipiscing elit. Vivamus nec augue ac dui sodales euismod. 
+                                            |Suspendisse at dui sit amet felis commodo dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                            | per inceptos himenaeos. Integer commodo eleifend erat, vitae tincidunt urna volutpat et. Mauris laoreet, sem ut sodales
+                                            | sodales, massa turpis posuere lectus, non aliquet massa nisl ac orci.
+                        h3.roomDetailSubDesc Facilities
+                    .roomDetalFacilitiesWrapper 
+                        ul.roomDetalFacilitiesList
+                            li.roomDetalFacilitiesItem Sauna
+                            li.roomDetalFacilitiesItem Outdoor Kitchen
+                            li.roomDetalFacilitiesItem Trees and Landscaping
+                            li.roomDetalFacilitiesItem Family Room
+                        ul.roomDetalFacilitiesList
+                            li.roomDetalFacilitiesItem Fireplace or fire pit
+                            li.roomDetalFacilitiesItem Tennis Courts
+                            li.roomDetalFacilitiesItem Sun Room
+                            li.roomDetalFacilitiesItem Concrete Flooring
+                .roomDetailContentItem
+                    .roomDetailInfo
+                        ul.roomDetailInfoList 
+                            li.roomDetailInfoItem
+                                p 1-Bed Rooms:
+                                span 23
+                            li.roomDetailInfoItem
+                                p 2-Bed Rooms:
+                                span 48
+                            li.roomDetailInfoItem
+                                p Apartments:
+                                span 12
+                            li.roomDetailInfoItem
+                                p Parking:
+                                span Free
+                            li.roomDetailInfoItem
+                                p Swimming:
+                                span Yes
+                            li.roomDetailInfoItem
+                                p Ski Center:
+                                span 2Km
+                        .roomDetalContact 
+                            h4.roomDetalContactTitle
+
+                
+
