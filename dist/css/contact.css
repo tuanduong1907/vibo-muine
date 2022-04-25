@@ -69,12 +69,24 @@
 }
 .wrapBreadcrumb .titleItem {
   color: #ffffff;
+  font-family: "PlayfairDisplay";
+  text-transform: uppercase;
 }
 .wrapBreadcrumb .wrapImgItem {
   background-color: #333333;
+  position: relative;
+}
+.wrapBreadcrumb .wrapImgItem .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 .wrapBreadcrumb .wrapImgItem .wrapImgResize {
-  height: 500px;
+  height: 350px;
 }
 .wrapBreadcrumb .wrapImgItem img {
   width: 100%;
@@ -94,9 +106,16 @@
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
+  text-align: center;
+  z-index: 3;
 }
 .wrapBreadcrumb .wrapTitleMain {
   margin-bottom: 15px;
+}
+.wrapBreadcrumb .wrapMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapBreadcrumb .wrapMenu .linkItem {
   display: block;
@@ -113,7 +132,7 @@
   -o-transition: 0.5s;
 }
 .wrapBreadcrumb .wrapMenu .linkItem:hover {
-  color: #0f77be;
+  color: rgba(255, 255, 255, 0.8);
   -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
   -webkit-mask-size: 200%;
   -webkit-animation: shine 2s infinite;
