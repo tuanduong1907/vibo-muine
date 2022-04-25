@@ -168,118 +168,77 @@
     height: 150px;
   }
 }
-.contact .contactContentWrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 0 40px;
+.roomListWrapper {
   padding-block: 40px;
-}
-.contact .contactContentItem:first-child {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
-.contact .contactContentItem:last-child {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.roomListWrapper .roomItem .roomItemImage {
+  transition: all linear 2s;
+  width: 100%;
+  height: 230px;
+  position: relative;
 }
-.contact .contactIntroduce p {
+.roomListWrapper .roomItem .roomItemImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.roomListWrapper .roomItem .roomItemImage:hover .roomMore {
+  display: flex;
+}
+.roomListWrapper .roomItem .roomItemImage .roomMore {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: center;
+  padding: 8px 12px;
+  display: none;
+  transition: all linear 2s;
+}
+.roomListWrapper .roomItem .roomItemImage .roomMore .roomMoreTitle {
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 0;
 }
-.contact .contactInfo .contactInfoItem {
-  margin-bottom: 10px;
+.roomListWrapper .roomItem .roomContent {
+  margin-block: 15px;
 }
-.contact .contactInfo .contactInfoItem:last-child {
+.roomListWrapper .roomItem .roomContent .roomContentText {
   margin-bottom: 0;
 }
-.contact .contactInfo .contactInfoItem svg {
-  height: 14px;
-  fill: #0f77be;
-  margin-right: 8px;
-}
-.contact .contactSocialList {
+.roomListWrapper .roomItem .roomFooter {
   display: flex;
-  gap: 0 10px;
+  justify-content: space-between;
+  align-items: center;
 }
-.contact .contactSocialList .iconSocial {
-  height: 40px;
+.roomListWrapper .roomItem .roomFooter .roomPirce {
+  font-size: 12px;
+  line-height: 16px;
 }
-.contact .contactFormWrapper {
-  width: 100%;
-}
-.contact .contactFormWrapper .contactForm {
-  width: 100%;
-}
-.contact .contactFormWrapper .contactForm .contactFormItem {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-.contact .contactFormWrapper .contactForm .contactFormItem .formItem {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.contact .contactFormWrapper .contactForm .contactFormItem .formItem:focus {
-  border: 1px solid #0f77be;
-}
-.contact .contactFormWrapper .contactForm .btnFormContact {
-  display: block;
-  margin-left: auto;
+.roomListWrapper .roomItem .roomFooter .roomPirce span {
+  color: #ee4121;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-right: 4px;
 }
 
 /* Mobile & tablet: width <1024px */
-@media only screen and (max-width: 1023px) {
-  .contactContentWrapper {
-    flex-direction: column;
-  }
-  .contactContentWrapper .googleMap {
-    width: 100%;
-  }
-}
 /* Mobie: width < 740px */
 @media only screen and (max-width: 739px) {
-  .contact .contactContentWrapper {
-    padding-bottom: 30px;
-  }
-  .contact .contactContentItem:first-child {
-    gap: 15px;
-    margin-bottom: 15px;
-  }
-  .contact .contactContentItem:last-child {
-    gap: 15px;
-  }
-  .contact .btnFormContact {
-    width: 100%;
+  .roomListWrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-  .contact .contactContentWrapper {
-    padding-bottom: 30px;
-  }
-  .contact .wrapperTitleSection {
-    padding-block: 30px;
-  }
-  .contact .contactContentItem:first-child {
-    gap: 15px;
-    margin-bottom: 15px;
-  }
-  .contact .contactContentItem:last-child {
-    gap: 15px;
+  .roomListWrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* PC Low */
-@media (min-width: 1024px) and (max-width: 1239px) {
-  .contact .contactContentWrapper .googleMap {
-    width: 100%;
-  }
-  .contact .contactContentItem:first-child {
-    width: 300px;
-  }
-  .contact .contactContentItem:last-child {
-    width: 100%;
-  }
-}
 /* PC: width >= 1024px */

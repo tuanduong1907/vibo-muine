@@ -14947,12 +14947,18 @@ table {
   border-collapse: collapse;
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
   padding: 10px 15px;
   border: 1px solid #eeeeee;
 }
 
-img, button {
+img,
+button {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -15075,7 +15081,7 @@ button {
 }
 @layer components {
   .button {
-    padding: 12px 20px;
+    padding: 8px 20px;
     background-color: #0f77be;
     display: inline-block;
     border-radius: 4px !important;

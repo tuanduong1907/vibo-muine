@@ -586,9 +586,9 @@
 			]
 		},
 		"page_contact": {
-			"title_page": "Home",
-			"description_page": "Home",
-			"keywords_page": "Home",
+			"title_page": "Contact",
+			"description_page": "Contact",
+			"keywords_page": "Contact",
 			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
 			"link_css_page": [
 				"lib",
@@ -599,7 +599,96 @@
 				"lib",
 				"home",
 				"jquery-ui.min"
+			],
+			"breadcrumb": {
+				"url_img": "images/banner/banner-slide-1.jpg",
+				"menu": []
+			}
+		},
+		"page_rooms": {
+			"title_page": "Rooms",
+			"description_page": "Rooms",
+			"keywords_page": "Rooms",
+			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
+			"link_css_page": [
+				"lib",
+				"fonts",
+				"rooms"
+			],
+			"link_js_page": [
+				"lib",
+				"jquery-ui.min",
+				"home"
+			],
+			"breadcrumb": {
+				"url_img": "images/banner/banner-slide-1.jpg",
+				"menu": []
+			},
+			"rooms": [
+				{
+					"images": "images/introduction/room-1.jpg",
+					"kindOfRoom": "Standard Room",
+					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
+					"price": "4.000.000",
+					"link": "roomDetail.html"
+				},
+				{
+					"images": "images/introduction/room-2.jpg",
+					"kindOfRoom": "Standard Room",
+					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
+					"price": "4.000.000",
+					"link": "roomDetail.html"
+				},
+				{
+					"images": "images/introduction/room-3.jpg",
+					"kindOfRoom": "Standard Room",
+					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
+					"price": "4.000.000",
+					"link": "roomDetail.html"
+				},
+				{
+					"images": "images/introduction/room-4.jpg",
+					"kindOfRoom": "Standard Room",
+					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
+					"price": "4.000.000",
+					"link": "roomDetail.html"
+				},
+				{
+					"images": "images/introduction/room-5.jpg",
+					"kindOfRoom": "Standard Room",
+					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
+					"price": "4.000.000",
+					"link": "roomDetail.html"
+				},
+				{
+					"images": "images/introduction/room-6.jpg",
+					"kindOfRoom": "Standard Room",
+					"sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
+					"price": "4.000.000",
+					"link": "roomDetail.html"
+				}
 			]
+		},
+		"page_roomDetail": {
+			"title_page": "Room Detail",
+			"description_page": "Room Detail",
+			"keywords_page": "Room Detail",
+			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
+			"link_css_page": [
+				"lib",
+				"fonts",
+				"roomDetail"
+			],
+			"link_js_page": [
+				"lib",
+				"roomDetail",
+				"jquery-ui.min",
+				"home"
+			],
+			"breadcrumb": {
+				"url_img": "images/banner/banner-slide-1.jpg",
+				"menu": []
+			}
 		}
 	}
 }

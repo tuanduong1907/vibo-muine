@@ -26,11 +26,11 @@
 
 // popup booking
 @import "../components/popupBooking";
-// end popup booking 
+// end popup booking
 
-// list link social 
+// list link social
 @import "../components/listLinkSocial";
-// end list link social 
+// end list link social
 
 // popup language
 @import "../components/popupLanguage";
@@ -44,49 +44,55 @@
 @import "../components/footer";
 // end footer
 
-*{
-    font-family: $font1;
+* {
+  font-family: $font1;
 }
 
-body{
-    overflow-y: scroll;
-    &::-webkit-scrollbar{
-        width: 6px;
-    }
-    &::-webkit-scrollbar-track {
-        background: #dbdbdb; 
-    }
-    &::-webkit-scrollbar-thumb {
-        background: #888; 
-    }
+body {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #dbdbdb;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
 }
 
 a,
 span,
 p {
-    font-size: 14px;
-    line-height: 22px;
-    color: $color2;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color2;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-tbody, td, tfoot, th, thead, tr{
-    padding: 10px 15px;
-    border: 1px solid #eeeeee;
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  padding: 10px 15px;
+  border: 1px solid #eeeeee;
 }
 
-img, button{
-    user-select: none;
+img,
+button {
+  user-select: none;
 }
 
 input,
@@ -103,127 +109,127 @@ button {
   cursor: pointer;
 }
 
-.overflow-hidden{
-    overflow: hidden;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 // button scroll top
 .wrapperButtonScrollTop {
-    position: fixed;
-    bottom: -100px;
-    right: 20px;
-    width: 50px;
-    padding-top: 50px;
-    transition: all 0.5s;
-    z-index: 99;
-    &.active {
-        bottom: 20px;
-    }
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  width: 50px;
+  padding-top: 50px;
+  transition: all 0.5s;
+  z-index: 99;
+  &.active {
+    bottom: 20px;
+  }
 }
 
 .buttonScrollTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $color7;
+  overflow: hidden;
+  transition: all 0.5s;
+  svg {
+    width: 25px;
+    height: 25px;
+    color: $color3;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: $color7;
-    overflow: hidden;
-    transition: all .5s;
-    svg {
-        width: 25px;
-        height: 25px;
-        color: $color3;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    &:hover{
-        transform: scale(.92);
-    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    transform: scale(0.92);
+  }
 }
 
 @media (max-width: 991.98px) {
-    .wrapperButtonScrollTop {
-        &.active {
-            bottom: 65px;
-        }
+  .wrapperButtonScrollTop {
+    &.active {
+      bottom: 65px;
     }
-    body{
-        overflow-y: scroll;
-        &::-webkit-scrollbar{
-            width: 3px;
-        }
+  }
+  body {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 3px;
     }
+  }
 }
-@media (max-width: 575.98px){
-    .wrapperButtonScrollTop {
-        right: 8px;
-        &.active {
-            bottom: 58px;
-        }
+@media (max-width: 575.98px) {
+  .wrapperButtonScrollTop {
+    right: 8px;
+    &.active {
+      bottom: 58px;
     }
+  }
 }
 // end button scroll top
 
 // title section
 .wrapperTitleSection {
-    position: relative;
-    .titleSection {
-        font-family: $font2;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 56px;
-        margin-bottom: 0;
-        color: $color3;
-        text-align: center;
-    }
-    .descriptionTitleSection {
-        font-size: 16px;
-        line-height: 22px;
-        color: $color8;
-        text-align: center;
-        margin-top: 8px;
-        margin-bottom: 0;
-    }
+  position: relative;
+  .titleSection {
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 0;
+    color: $color3;
+    text-align: center;
+  }
+  .descriptionTitleSection {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color8;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 991.98px) {
-    .wrapperTitleSection {
-        .titleSection {
-            font-size: 35px;
-            line-height: 43px;
-        }
-        
+  .wrapperTitleSection {
+    .titleSection {
+      font-size: 35px;
+      line-height: 43px;
     }
+  }
 }
-@media (max-width: 575.98px){
-    .wrapperTitleSection {
-        .titleSection {
-            font-size: 24px;
-            line-height: 30px;
-        }
-        .descriptionTitleSection {
-            font-size: 14px;
-            line-height: 20px;
-        }
+@media (max-width: 575.98px) {
+  .wrapperTitleSection {
+    .titleSection {
+      font-size: 24px;
+      line-height: 30px;
     }
+    .descriptionTitleSection {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 // end title section
-@layer components{
-    .button{
-        padding: 12px 20px;
-        background-color: $color3;
-        display: inline-block;
-        border-radius: 4px !important;
-        border: none;
-        color: $color1;
-        font-weight: 500;
-        transition: all linear .2s;
-        &:hover{
-            background-color: $color4;
-        }
+@layer components {
+  .button {
+    padding: 8px 20px;
+    background-color: $color3;
+    display: inline-block;
+    border-radius: 4px !important;
+    border: none;
+    color: $color1;
+    font-weight: 500;
+    transition: all linear 0.2s;
+    &:hover {
+      background-color: $color4;
     }
+  }
 }
+

@@ -1,0 +1,19 @@
+// room list
+.roomListWrapper.container
+    each item in data.page_rooms.rooms
+        .roomItem 
+            .roomItemImage
+                img(src= item.images)
+                .roomMore
+                    a(href= item.link) 
+                        h3.roomMoreTitle= item.kindOfRoom
+            .roomContent 
+                p.roomContentText= item.sumary
+            .roomFooter 
+                .roomPirce 
+                    span
+                        = item.price
+                        |VNĐ/
+                    | Day
+                button.roomBookBtn.button Book Now
+// end room list
