@@ -630,42 +630,42 @@
                 "kindOfRoom": "Standard Room",
                 "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
                 "price": "4.000.000",
-                "link": "roomDetail.html"
+                "link": "room-detail.html"
             },
             {
                 "images": "images/introduction/room-2.jpg",
                 "kindOfRoom": "Standard Room",
                 "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
                 "price": "4.000.000",
-                "link": "roomDetail.html"
+                "link": "room-detail.html"
             },
             {
                 "images": "images/introduction/room-3.jpg",
                 "kindOfRoom": "Standard Room",
                 "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
                 "price": "4.000.000",
-                "link": "roomDetail.html"
+                "link": "room-detail.html"
             },
             {
                 "images": "images/introduction/room-4.jpg",
                 "kindOfRoom": "Standard Room",
                 "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
                 "price": "4.000.000",
-                "link": "roomDetail.html"
+                "link": "room-detail.html"
             },
             {
                 "images": "images/introduction/room-5.jpg",
                 "kindOfRoom": "Standard Room",
                 "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
                 "price": "4.000.000",
-                "link": "roomDetail.html"
+                "link": "room-detail.html"
             },
             {
                 "images": "images/introduction/room-6.jpg",
                 "kindOfRoom": "Standard Room",
                 "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat vel animi ab aut fugiat laboriosam alias enim! Non ipsa,atque consectetur itaque explicabo quis recusandae sunt odio voluptas harum.",
                 "price": "4.000.000",
-                "link": "roomDetail.html"
+                "link": "room-detail.html"
             }
         ]
     },
