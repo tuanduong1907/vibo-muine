@@ -55,9 +55,8 @@
 .roomDetailWrapper {
   // display: flex;
   margin-top: 40px;
-  .roomDetailRelatedWrapper {
-    // width: 300px;
-    // display: block;
+  .roomDetailRelatedTitle {
+    margin-bottom: 15px;
   }
   .roomDetailSlide {
     width: 100%;
@@ -189,9 +188,16 @@
   }
   .roomDetailTitleWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 15px;
+    .roomDetailPirce {
+      background-color: $color4;
+      color: $color1;
+      font-weight: 600;
+      user-select: none;
+      cursor: default;
+    }
   }
   .roomDetailContentWrapper {
     display: flex;
@@ -211,6 +217,7 @@
       .roomDetailSubDesc {
         font-size: 18px;
         line-height: 28px;
+        margin-top: 15px;
       }
       .roomDetailDescText {
         font-size: 14px;
@@ -226,6 +233,13 @@
             font-size: 14px;
             line-height: 20px;
             margin-bottom: 10px;
+            gap: 0 8px;
+            display: flex;
+            align-items: center;
+            svg {
+              height: 8px;
+              fill: $color3;
+            }
           }
         }
       }
@@ -241,6 +255,24 @@
             margin-bottom: 10px;
             p {
               margin-bottom: 0;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .roomDetalContact {
+        margin-top: 30px;
+        .roomDetalContactTitle {
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 600;
+        }
+        .roomDetalContactList {
+          .roomDetalContactItem {
+            font-size: 14px;
+            line-height: 20px;
+            span {
+              font-weight: 600;
             }
           }
         }
@@ -249,8 +281,15 @@
   }
 }
 
+// Slide
 .slick-slide img {
   width: 100%;
+}
+.showSlideCtrlImg {
+  .slick-active.slick-current {
+    opacity: 0.5 !important;
+    transition: all linear 0.2s;
+  }
 }
 
 .wrapperRoom {
@@ -420,6 +459,7 @@
   }
 }
 
+// Responsive
 @media (max-width: 991.98px) {
   .wrapperDescriptionRoom {
     .descriptionRoom {
@@ -475,4 +515,54 @@
       padding: 14px 24px;
     }
   }
+}
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .roomDetailWrapper {
+    .rowItem {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+  }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .roomDetailWrapper {
+    margin-top: 15px;
+    .roomDetailContentWrapper {
+      flex-direction: column;
+      .roomDetailContentItem {
+        &:first-child {
+          width: 100%;
+        }
+        .roomDetalContact,
+        .roomDetailInfo {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .roomDetailWrapper {
+    .roomDetailContentWrapper {
+      margin-bottom: 15px;
+      .roomDetailContentItem {
+        &:first-child {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 1024px) {
 }

@@ -63,7 +63,7 @@
 }
 
 .wrapperRoom {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .wrapperDescriptionRoom {
@@ -77,17 +77,13 @@
   margin-bottom: 8px;
 }
 
-.wrapperListRoom {
-  padding-top: 16px;
-}
-
-.listRoom {
+.wrapperListRoom .listRoom {
   margin: 0;
 }
-.listRoom .itemRoom {
+.wrapperListRoom .listRoom .itemRoom {
   padding: 0;
 }
-.listRoom .itemRoom .containerItemRoom {
+.wrapperListRoom .listRoom .itemRoom .containerItemRoom {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +92,7 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.listRoom .itemRoom .containerItemRoom:hover .wrapperImageRoom .imageRoom {
+.wrapperListRoom .listRoom .itemRoom .containerItemRoom:hover .wrapperImageRoom .imageRoom {
   transform: scale(1.1);
 }
 
@@ -394,6 +390,32 @@
     line-height: 16px;
   }
 }
+.pagingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.pagingWrapper .pagingList {
+  display: flex;
+  gap: 12px;
+}
+.pagingWrapper .pagingList .pagingItem .pagingLink {
+  padding: 4px 8px;
+  border: 1px solid #0f77be;
+  color: #0f77be;
+  font-weight: 500;
+  transition: all 0.1s linear;
+}
+.pagingWrapper .pagingList .pagingItem .pagingLink:hover {
+  background-color: #0f77be;
+  color: #ffffff;
+}
+.pagingWrapper .pagingList .pagingItem .pagingLink.pagingLinkActive {
+  background-color: #0f77be;
+  color: #ffffff;
+}
+
 .roomListWrapper {
   padding-block: 40px;
   display: grid;

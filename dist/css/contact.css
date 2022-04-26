@@ -182,18 +182,25 @@
 .contact .contactContentWrapper {
   display: flex;
   justify-content: space-between;
-  gap: 0 40px;
+  gap: 0 80px;
   padding-block: 40px;
 }
 .contact .contactContentItem:first-child {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  flex: 1;
 }
 .contact .contactContentItem:last-child {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  width: 40%;
+}
+.contact .contactContentItem .googleMapWrap {
+  width: 100%;
+}
+.contact .contactContentItem .googleMapWrap .googleMapImg {
+  width: 100% !important;
 }
 .contact .contactIntroduce p {
   margin-bottom: 0;
@@ -247,6 +254,13 @@
   }
   .contactContentWrapper .googleMap {
     width: 100%;
+  }
+  .contactContentWrapper .contactContentItem:last-child {
+    width: 100%;
+  }
+
+  .contactFormWrapper .contactForm .contactFormItem textarea {
+    width: 100% !important;
   }
 }
 /* Mobie: width < 740px */

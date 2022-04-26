@@ -63,7 +63,7 @@
 }
 
 .wrapperWelcome {
-  padding-top: 40px;
+  padding-block: 40px;
 }
 
 .wrapperTextWelcome {
@@ -174,7 +174,7 @@
   }
 }
 .wrapperRoom {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .wrapperDescriptionRoom {
@@ -188,17 +188,13 @@
   margin-bottom: 8px;
 }
 
-.wrapperListRoom {
-  padding-top: 16px;
-}
-
-.listRoom {
+.wrapperListRoom .listRoom {
   margin: 0;
 }
-.listRoom .itemRoom {
+.wrapperListRoom .listRoom .itemRoom {
   padding: 0;
 }
-.listRoom .itemRoom .containerItemRoom {
+.wrapperListRoom .listRoom .itemRoom .containerItemRoom {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -207,7 +203,7 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.listRoom .itemRoom .containerItemRoom:hover .wrapperImageRoom .imageRoom {
+.wrapperListRoom .listRoom .itemRoom .containerItemRoom:hover .wrapperImageRoom .imageRoom {
   transform: scale(1.1);
 }
 
@@ -388,36 +384,32 @@
     padding: 14px 24px;
   }
 }
-.wrapperSpecial {
-  padding-top: 15px;
-}
-
-.contentSpecial {
+.wrapperSpecial .contentSpecial {
   margin-top: 20px;
   margin-right: -4px;
   margin-left: -4px;
 }
-.contentSpecial .elementSpecial {
+.wrapperSpecial .contentSpecial .elementSpecial {
   padding-left: 4px;
   padding-right: 4px;
 }
-.contentSpecial .slideArrowPrimary {
+.wrapperSpecial .contentSpecial .slideArrowPrimary {
   top: calc(50% + 20px);
   background-color: transparent;
 }
-.contentSpecial .slideArrowPrimary:after {
+.wrapperSpecial .contentSpecial .slideArrowPrimary:after {
   background-color: #0f77be;
 }
-.contentSpecial .slideArrowPrimary.prevArrow {
+.wrapperSpecial .contentSpecial .slideArrowPrimary.prevArrow {
   left: -25px;
 }
-.contentSpecial .slideArrowPrimary.prevArrow:before {
+.wrapperSpecial .contentSpecial .slideArrowPrimary.prevArrow:before {
   border-right-color: #0f77be;
 }
-.contentSpecial .slideArrowPrimary.nextArrow {
+.wrapperSpecial .contentSpecial .slideArrowPrimary.nextArrow {
   right: -25px;
 }
-.contentSpecial .slideArrowPrimary.nextArrow:before {
+.wrapperSpecial .contentSpecial .slideArrowPrimary.nextArrow:before {
   border-left-color: #0f77be;
 }
 

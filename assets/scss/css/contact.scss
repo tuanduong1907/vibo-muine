@@ -10,14 +10,13 @@
 @import "../layouts/mainSlide";
 // end main slide
 
-@import '../layouts/breadcrumb';
-
+@import "../layouts/breadcrumb";
 
 .contact {
   .contactContentWrapper {
     display: flex;
     justify-content: space-between;
-    gap: 0 40px;
+    gap: 0 80px;
     padding-block: 40px;
   }
   .contactContentItem {
@@ -25,11 +24,18 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
+      flex: 1;
     }
     &:last-child {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      width: 40%;
+    }
+    .googleMapWrap{
+      width: 100%;
+      .googleMapImg{
+        width: 100% !important;
+      }
     }
   }
   .contactIntroduce {
@@ -89,6 +95,20 @@
     .googleMap {
       width: 100%;
     }
+    .contactContentItem{
+      &:last-child{
+        width: 100%;
+      }
+    }
+  }
+  .contactFormWrapper {
+    .contactForm {
+      .contactFormItem {
+        textarea {
+          width: 100% !important;
+        }
+      }
+    }
   }
 }
 
@@ -107,7 +127,7 @@
         gap: 15px;
       }
     }
-    .btnFormContact{
+    .btnFormContact {
       width: 100%;
     }
   }
@@ -142,11 +162,11 @@
         width: 100%;
       }
     }
-    .contactContentItem{
-      &:first-child{
+    .contactContentItem {
+      &:first-child {
         width: 300px;
       }
-      &:last-child{
+      &:last-child {
         width: 100%;
       }
     }

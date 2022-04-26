@@ -370,7 +370,7 @@
 }
 
 .wrapperRoom {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .wrapperDescriptionRoom {
@@ -384,17 +384,13 @@
   margin-bottom: 8px;
 }
 
-.wrapperListRoom {
-  padding-top: 16px;
-}
-
-.listRoom {
+.wrapperListRoom .listRoom {
   margin: 0;
 }
-.listRoom .itemRoom {
+.wrapperListRoom .listRoom .itemRoom {
   padding: 0;
 }
-.listRoom .itemRoom .containerItemRoom {
+.wrapperListRoom .listRoom .itemRoom .containerItemRoom {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -403,7 +399,7 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.listRoom .itemRoom .containerItemRoom:hover .wrapperImageRoom .imageRoom {
+.wrapperListRoom .listRoom .itemRoom .containerItemRoom:hover .wrapperImageRoom .imageRoom {
   transform: scale(1.1);
 }
 
@@ -628,6 +624,9 @@
 .roomDetailWrapper {
   margin-top: 40px;
 }
+.roomDetailWrapper .roomDetailRelatedTitle {
+  margin-bottom: 15px;
+}
 .roomDetailWrapper .roomDetailSlide {
   width: 100%;
 }
@@ -739,9 +738,19 @@
 }
 .roomDetailWrapper .roomDetailTitleWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 15px;
+}
+.roomDetailWrapper .roomDetailTitleWrapper .roomDetailPirce {
+  background-color: #ee4121;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 .roomDetailWrapper .roomDetailContentWrapper {
   display: flex;
@@ -761,6 +770,7 @@
 .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetailSubDesc {
   font-size: 18px;
   line-height: 28px;
+  margin-top: 15px;
 }
 .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetailDescText {
   font-size: 14px;
@@ -778,6 +788,13 @@
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
+  gap: 0 8px;
+  display: flex;
+  align-items: center;
+}
+.roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalFacilitiesWrapper .roomDetalFacilitiesList .roomDetalFacilitiesItem svg {
+  height: 8px;
+  fill: #0f77be;
 }
 .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetailInfo {
   padding: 20px;
@@ -792,10 +809,31 @@
 }
 .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetailInfo .roomDetailInfoList .roomDetailInfoItem p {
   margin-bottom: 0;
+  font-weight: 600;
+}
+.roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalContact {
+  margin-top: 30px;
+}
+.roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalContact .roomDetalContactTitle {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalContact .roomDetalContactList .roomDetalContactItem {
+  font-size: 14px;
+  line-height: 20px;
+}
+.roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalContact .roomDetalContactList .roomDetalContactItem span {
+  font-weight: 600;
 }
 
 .slick-slide img {
   width: 100%;
+}
+
+.showSlideCtrlImg .slick-active.slick-current {
+  opacity: 0.5 !important;
+  transition: all linear 0.2s;
 }
 
 .wrapperRoom {
@@ -1013,3 +1051,37 @@
     padding: 14px 24px;
   }
 }
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .roomDetailWrapper .rowItem {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .roomDetailWrapper {
+    margin-top: 15px;
+  }
+  .roomDetailWrapper .roomDetailContentWrapper {
+    flex-direction: column;
+  }
+  .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem:first-child {
+    width: 100%;
+  }
+  .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalContact,
+.roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetailInfo {
+    margin-top: 15px;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .roomDetailWrapper .roomDetailContentWrapper {
+    margin-bottom: 15px;
+  }
+  .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem:first-child {
+    width: 60%;
+  }
+}
+/* PC Low */
+/* PC: width >= 1024px */

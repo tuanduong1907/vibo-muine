@@ -1,0 +1,146 @@
+.roomDetailWrapper.container
+    .row.rowItem 
+        .col-lg-4
+            h3.roomDetailRelatedTitle Related Room 
+            ul.listRoom.row
+                each item, index in data.rooms
+                    if index < 2
+                        li.itemRoom.col-md-12.col-xl-12
+                            .containerItemRoom
+                                .wrapperImageRoom
+                                    a.linkImageRoom(href= item.link title='Image Room')
+                                        img.imageRoom(src= item.images alt='Room')
+                                .wrapperNameRoom.backgroundColor1
+                                    h3.nameRoom
+                                        a.linkNameRoom(href= item.link title='Standard Room') Standard Room
+                                .wrapperTextRoom
+                                    p= item.sumary
+                                .wrapperPriceRoom
+                                    p.priceRoom.haveDiscount
+                                        = item.priceOld
+                                        span VNĐ
+                                    p.priceRoom
+                                        = item.priceCurrent
+                                        span VNĐ
+                                .wrapperButtonRoom
+                                    a.buttonPrimary(href= item.link title='Room Detail')
+                                        | See
+                                        | More
+                                    a.buttonPrimary-outline(href= item.link title='Book Now')
+                                        | Book
+                                        | Now
+        .col-lg-8.colImg
+            .wrapSlideMainImg
+                .showSlideMainImg 
+                    each item in data.rooms
+                        .itemSlide(data-src= item)
+                            .contentImg 
+                                .wrapImgResize.img16And9 
+                                    img(src= item.images)
+
+            .wrapSlideCtrlImg
+                .showSlideCtrlImg 
+                    each item in data.rooms
+                        .itemSlide
+                            .contentImg 
+                                .wrapImgResize.img16And9 
+                                    img(src= item.images)
+            .roomDetailTitleWrapper 
+                //- h2.roomDetailTitle Standard Room
+                a.button.roomDetailPirce(href="javascript:void(0);")
+                    |4.000.000 VNĐ
+            .roomDetailContentWrapper
+                .roomDetailContentItem
+                    .roomDetailDescWrapper 
+                        h3.roomDetailDesc Description
+                        h4.roomDetailSubDesc Spend Great Time in Our Hotel!
+                        p.roomDetailDescText Consectetur adipiscing elit. Vivamus nec augue ac dui sodales euismod. 
+                                            |Suspendisse at dui sit amet felis commodo dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                            | per inceptos himenaeos. Integer commodo eleifend erat, vitae tincidunt urna volutpat et. Mauris laoreet, sem ut sodales
+                                            | sodales, massa turpis posuere lectus, non aliquet massa nisl ac orci.
+                        p.roomDetailDescText Consectetur adipiscing elit. Vivamus nec augue ac dui sodales euismod. 
+                                            |Suspendisse at dui sit amet felis commodo dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                            | per inceptos himenaeos. Integer commodo eleifend erat, vitae tincidunt urna volutpat et. Mauris laoreet, sem ut sodales
+                                            | sodales, massa turpis posuere lectus, non aliquet massa nisl ac orci.
+                        h3.roomDetailSubDesc Facilities
+                    .roomDetalFacilitiesWrapper 
+                        ul.roomDetalFacilitiesList
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Sauna
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Outdoor Kitchen
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Trees and Landscaping
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Family Room
+                        ul.roomDetalFacilitiesList
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Fireplace or fire pit
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Tennis Courts
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Sun Room
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Concrete Flooring
+                .roomDetailContentItem
+                    .roomDetailInfo
+                        ul.roomDetailInfoList 
+                            li.roomDetailInfoItem
+                                p 1-Bed Rooms:
+                                span 23
+                            li.roomDetailInfoItem
+                                p 2-Bed Rooms:
+                                span 48
+                            li.roomDetailInfoItem
+                                p Apartments:
+                                span 12
+                            li.roomDetailInfoItem
+                                p Parking:
+                                span Free
+                            li.roomDetailInfoItem
+                                p Swimming:
+                                span Yes
+                            li.roomDetailInfoItem
+                                p Ski Center:
+                                span 2Km
+                    .roomDetalContact 
+                        h4.roomDetalContactTitle Contact
+                        ul.roomDetalContactList
+                            li.roomDetalContactItem 
+                                span Address: 
+                                | 29A Nguyen Dinh Chieu, Ham Tien Ward, City. Phan Thiet, Binh Thuan Province
+                            li.roomDetalContactItem 
+                                span Phone: 
+                                | +84 123456789
+                            li.roomDetalContactItem 
+                                span Fax: 
+                                | +84 123456789
+
+
+
+                
+

@@ -211,42 +211,51 @@
 			{
 				"images": "images/introduction/room-1.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-detail.html",
+				"link": "room-standard.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-2.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-detail.html",
+				"link": "room-standard.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-3.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-detail.html",
+				"link": "room-standard.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-4.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-detail.html",
+				"link": "room-standard.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-5.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-detail.html",
+				"link": "room-standard.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			},
 			{
 				"images": "images/introduction/room-6.jpg",
 				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-detail.html",
+				"link": "room-standard.html",
+				"priceOld": "5.000.000",
+				"priceCurrent": "4.000.000"
+			}
+		],
+		"news-list": [
+			{
+				"images": "images/introduction/room-6.jpg",
+				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+				"link": "room-standard.html",
 				"priceOld": "5.000.000",
 				"priceCurrent": "4.000.000"
 			}
@@ -625,10 +634,10 @@
 				"menu": []
 			}
 		},
-		"page_roomDetail": {
-			"title_page": "Room Detail",
-			"description_page": "Room Detail",
-			"keywords_page": "Room Detail",
+		"page_roomStandard": {
+			"title_page": "Room Standard",
+			"description_page": "Room Standard",
+			"keywords_page": "Room Standard",
 			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
 			"link_css_page": [
 				"lib",

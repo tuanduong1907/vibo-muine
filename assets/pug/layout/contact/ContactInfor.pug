@@ -2,10 +2,10 @@
 section.contact
     .contactContentWrapper.container
         .contactContentItem 
-            .contactIntroduce 
-                h4.contactTitle Hotel Infomation
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, iusto. Quos, architecto eum. Corrupti dolore quasi repellat optio quod eum architecto,
-                  | ducimus autem, mollitia praesentium delectus ratione atque aliquid minus?
+            //- .contactIntroduce 
+            //-     h4.contactTitle Hotel Infomation
+            //-     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, iusto. Quos, architecto eum. Corrupti dolore quasi repellat optio quod eum architecto,
+            //-       | ducimus autem, mollitia praesentium delectus ratione atque aliquid minus?
             .contactInfo 
                 h4.contactTitle Contact
                 p.contactInfoItem 
@@ -31,9 +31,10 @@ section.contact
                         img.iconSocial(src='images/icon/icon-instagram.svg' alt='icon facebook')
                     a.socialItem(href="javascript:void(0);") 
                         img.iconSocial(src='images/icon/icon-youtube.svg' alt='icon facebook')
-        .contactContentItem 
             .googleMapWrap
-                iframe.googleMap(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.2710672790954!2d108.19058851524154!3d10.942884859090283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317685844e28b1e7%3A0xdef69de22952e45!2sVIPOL%20MUI%20NE%20HOTEL!5e0!3m2!1svi!2s!4v1650735234176!5m2!1svi!2s' width='850' height='300' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+                iframe.googleMapImg(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.2710672790954!2d108.19058851524154!3d10.942884859090283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317685844e28b1e7%3A0xdef69de22952e45!2sVIPOL%20MUI%20NE%20HOTEL!5e0!3m2!1svi!2s!4v1650905671439!5m2!1svi!2s' width='800' height='250' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+        .contactContentItem 
+            h4 Leave Us A Comment
             .contactFormWrapper 
                 form(autoComplete="off").contactForm
                     .contactFormItem
@@ -46,13 +47,10 @@ section.contact
                         label(for="email") Email address:
                         input(type="text" placeholder="Please enter your email...")#email.formItem
                     .contactFormItem
-                        label(for="country") Country:
-                        select#country(name="country").formItem 
-                            option(value="") Select Country
-                            each item in data.country
-                                option(value= item.value)= item.name
+                        label(for="address") Address:
+                        input(type="text" placeholder="Please enter your address...")#address.formItem
                     .contactFormItem
                         label(for="message") Your Message:
-                        textarea#message(name="message" placeholder="Please enter your email..." rows="8").formItem 
+                        textarea#message(name="message" placeholder="Please enter your email..." rows="3").formItem 
                     button.button.btnFormContact SEND
 // end contact

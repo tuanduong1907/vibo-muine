@@ -15031,6 +15031,10 @@ button {
   overflow: hidden;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .wrapperButtonScrollTop {
   position: fixed;
   bottom: -100px;
