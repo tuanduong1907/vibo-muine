@@ -1,4 +1,19 @@
 // news list
-h2 News List
-
+section.newsListWrapper.container
+    ul.newsList
+        each item in data.page_newsList.news_list
+            li.newsItem 
+                a(href= item.link title= item.title).newsItemImage
+                    img(src= item.images, alt= item.title)
+                .newItemContent 
+                    .newsItemAuthor 
+                        | By 
+                        = item.date
+                        span /
+                        = item.author
+                    a(href="").newsItemTitleLink
+                        h2.newsItemTitle Candle Light Dinner
+                    p.newsItemText Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat,
+                                | molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.
+                    a.newsItemMore(href="javascript:void(0);") Read More 
 // end news list

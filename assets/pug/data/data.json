@@ -251,15 +251,6 @@
 				"priceCurrent": "4.000.000"
 			}
 		],
-		"news-list": [
-			{
-				"images": "images/introduction/room-6.jpg",
-				"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-				"link": "room-standard.html",
-				"priceOld": "5.000.000",
-				"priceCurrent": "4.000.000"
-			}
-		],
 		"slide_main": [
 			{
 				"url_img": "images/banner/banner-slide-1.jpg",
@@ -654,6 +645,77 @@
 				"url_img": "images/banner/banner-slide-1.jpg",
 				"menu": []
 			}
+		},
+		"page_newsList": {
+			"title_page": "News List",
+			"description_page": "News List",
+			"keywords_page": "News List",
+			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
+			"link_css_page": [
+				"lib",
+				"fonts",
+				"newsList"
+			],
+			"link_js_page": [
+				"lib",
+				"roomDetail",
+				"jquery-ui.min",
+				"home"
+			],
+			"breadcrumb": {
+				"url_img": "images/banner/banner-slide-1.jpg",
+				"menu": []
+			},
+			"news_list": [
+				{
+					"images": "images/news/news-1.jpg",
+					"date": "April 26, 2022",
+					"author": "Angela Hansen",
+					"title": "Candle Light Dinner",
+					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/news/news-2.jpg",
+					"date": "April 26, 2022",
+					"author": "Angela Hansen",
+					"title": "Relaxing Bath",
+					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/news/news-3.jpg",
+					"date": "April 26, 2022",
+					"author": "Angela Hansen",
+					"title": "Table Decoration",
+					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/news/news-1.jpg",
+					"date": "April 26, 2022",
+					"author": "Angela Hansen",
+					"title": "Candle Light Dinner",
+					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/news/news-2.jpg",
+					"date": "April 26, 2022",
+					"author": "Angela Hansen",
+					"title": "Relaxing Bath",
+					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/news/news-3.jpg",
+					"date": "April 26, 2022",
+					"author": "Angela Hansen",
+					"title": "Table Decoration",
+					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"link": "javascript:void(0);"
+				}
+			]
 		}
 	}
 }
