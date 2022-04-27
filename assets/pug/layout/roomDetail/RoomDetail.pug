@@ -1,34 +1,5 @@
 .roomDetailWrapper.container
     .row.rowItem 
-        .col-lg-4
-            h3.roomDetailRelatedTitle Related Room 
-            ul.listRoom.row
-                each item, index in data.rooms
-                    if index < 2
-                        li.itemRoom.col-md-12.col-xl-12
-                            .containerItemRoom
-                                .wrapperImageRoom
-                                    a.linkImageRoom(href= item.link title='Image Room')
-                                        img.imageRoom(src= item.images alt='Room')
-                                .wrapperNameRoom.backgroundColor1
-                                    h3.nameRoom
-                                        a.linkNameRoom(href= item.link title='Standard Room') Standard Room
-                                .wrapperTextRoom
-                                    p= item.sumary
-                                .wrapperPriceRoom
-                                    p.priceRoom.haveDiscount
-                                        = item.priceOld
-                                        span VNĐ
-                                    p.priceRoom
-                                        = item.priceCurrent
-                                        span VNĐ
-                                .wrapperButtonRoom
-                                    a.buttonPrimary(href= item.link title='Room Detail')
-                                        | See
-                                        | More
-                                    a.buttonPrimary-outline(href= item.link title='Book Now')
-                                        | Book
-                                        | Now
         .col-lg-8.colImg
             .wrapSlideMainImg
                 .showSlideMainImg 
@@ -46,9 +17,10 @@
                                 .wrapImgResize.img16And9 
                                     img(src= item.images)
             .roomDetailTitleWrapper 
-                //- h2.roomDetailTitle Standard Room
-                a.button.roomDetailPirce(href="javascript:void(0);")
-                    |4.000.000 VNĐ
+                h2.roomDetailTitle ROOM STANDARD
+                .wrapperPriceRoom.wrapperPriceRoomDetail
+                    p.priceRoom.haveDiscount 5.000.000 VNĐ
+                    p.priceRoom 4.000.000 VNĐ
             .roomDetailContentWrapper
                 .roomDetailContentItem
                     .roomDetailDescWrapper 
@@ -139,6 +111,39 @@
                             li.roomDetalContactItem 
                                 span Fax: 
                                 | +84 123456789
+            .wrapShare.clearfix
+                .titleShare Chia sẻ ngay:
+                .listBtnSharePost
+                    .addthis_inline_share_toolbox_wc4f
+        .col-lg-4
+            h3.roomDetailRelatedTitle Related Room 
+            ul.listRoom.row
+                each item, index in data.rooms
+                    if index < 2
+                        li.itemRoom.col-md-12.col-xl-12
+                            .containerItemRoom
+                                .wrapperImageRoom
+                                    a.linkImageRoom(href= item.link title='Image Room')
+                                        img.imageRoom(src= item.images alt='Room')
+                                .wrapperNameRoom.backgroundColor1
+                                    h3.nameRoom
+                                        a.linkNameRoom(href= item.link title='Standard Room') Standard Room
+                                .wrapperTextRoom
+                                    p= item.sumary
+                                .wrapperPriceRoom
+                                    p.priceRoom.haveDiscount
+                                        = item.priceOld
+                                        span VNĐ
+                                    p.priceRoom
+                                        = item.priceCurrent
+                                        span VNĐ
+                                .wrapperButtonRoom
+                                    a.buttonPrimary(href= item.link title='Room Detail')
+                                        | See
+                                        | More
+                                    a.buttonPrimary-outline(href= item.link title='Book Now')
+                                        | Book
+                                        | Now
 
 
 

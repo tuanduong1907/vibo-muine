@@ -1,0 +1,16 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+// mixins
+@import "../abstracts/mixins";
+// end mixin
+
+// breadcrumb
+@import "../layouts/breadcrumb";
+// end breadcrumb
+
+// paging
+@import "../components/pagging";
+// end paging
+@import "../css/newsList.scss";

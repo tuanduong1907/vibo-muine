@@ -265,226 +265,42 @@
 				"link": "javascript:void(0);"
 			}
 		],
-		"country": [
+		"special_offers": [
 			{
-				"value": "Afghanistan",
-				"name": "Afghanistan"
+				"name": "PREMIUM PACKAGE",
+				"images": "images/introduction/special-1.jpg",
+				"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
+				"link": "javascript:void(0);"
 			},
 			{
-				"value": "Albania",
-				"name": "Albania"
+				"name": "INDULGENCE PACKAGE",
+				"images": "images/introduction/special-2.jpg",
+				"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
+				"link": "javascript:void(0);"
 			},
 			{
-				"value": "Algeria",
-				"name": "Algeria"
+				"name": "HERITAGE LINE",
+				"images": "images/introduction/special-3.jpg",
+				"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
+				"link": "javascript:void(0);"
 			},
 			{
-				"value": "American Samoa",
-				"name": "American Samoa"
+				"name": "PREMIUM PACKAGE",
+				"images": "images/introduction/special-1.jpg",
+				"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
+				"link": "javascript:void(0);"
 			},
 			{
-				"value": "Andorra",
-				"name": "Andorra"
+				"name": "INDULGENCE PACKAGE",
+				"images": "images/introduction/special-2.jpg",
+				"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
+				"link": "javascript:void(0);"
 			},
 			{
-				"value": "Angola",
-				"name": "Angola"
-			},
-			{
-				"value": "Anguilla",
-				"name": "Anguilla"
-			},
-			{
-				"value": "Antarctica",
-				"name": "Antarctica"
-			},
-			{
-				"value": "Antigua and Barbuda",
-				"name": "Antigua and Barbuda"
-			},
-			{
-				"value": "Argentina",
-				"name": "Argentina"
-			},
-			{
-				"value": "Armenia",
-				"name": "Armenia"
-			},
-			{
-				"value": "Arctic Ocean",
-				"name": "Arctic Ocean"
-			},
-			{
-				"value": "Aruba",
-				"name": "Aruba"
-			},
-			{
-				"value": "Ashmore and Cartier Islands",
-				"name": "Ashmore and Cartier Islands"
-			},
-			{
-				"value": "Atlantic Ocean",
-				"name": "Atlantic Ocean"
-			},
-			{
-				"value": "Australia",
-				"name": "Australia"
-			},
-			{
-				"value": "Austria",
-				"name": "Austria"
-			},
-			{
-				"value": "Azerbaijan",
-				"name": "Azerbaijan"
-			},
-			{
-				"value": "Bahamas",
-				"name": "Bahamas"
-			},
-			{
-				"value": "Bahrain",
-				"name": "Bahrain"
-			},
-			{
-				"value": "Baker Island",
-				"name": "Baker Island"
-			},
-			{
-				"value": "Bangladesh",
-				"name": "Bangladesh"
-			},
-			{
-				"value": "Barbados",
-				"name": "Barbados"
-			},
-			{
-				"value": "Bassas da India",
-				"name": "Bassas da India"
-			},
-			{
-				"value": "Belarus",
-				"name": "Belarus"
-			},
-			{
-				"value": "Belgium",
-				"name": "Belgium"
-			},
-			{
-				"value": "Belize",
-				"name": "Belize"
-			},
-			{
-				"value": "Benin",
-				"name": "Benin"
-			},
-			{
-				"value": "Bermuda",
-				"name": "Bermuda"
-			},
-			{
-				"value": "Bhutan",
-				"name": "Bhutan"
-			},
-			{
-				"value": "Bolivia",
-				"name": "Bolivia"
-			},
-			{
-				"value": "Bosnia and Herzegovina",
-				"name": "Bosnia and Herzegovina"
-			},
-			{
-				"value": "Botswana",
-				"name": "Botswana"
-			},
-			{
-				"value": "Bouvet Island",
-				"name": "Bouvet Island"
-			},
-			{
-				"value": "Brazil",
-				"name": "Brazil"
-			},
-			{
-				"value": "British Virgin Islands",
-				"name": "British Virgin Islands"
-			},
-			{
-				"value": "Brunei",
-				"name": "Brunei"
-			},
-			{
-				"value": "Bulgaria",
-				"name": "Bulgaria"
-			},
-			{
-				"value": "Burkina Faso",
-				"name": "Burkina Faso"
-			},
-			{
-				"value": "Burundi",
-				"name": "Burundi"
-			},
-			{
-				"value": "Cambodia",
-				"name": "Cambodia"
-			},
-			{
-				"value": "Cameroon",
-				"name": "Cameroon"
-			},
-			{
-				"value": "Canada",
-				"name": "Canada"
-			},
-			{
-				"value": "Cape Verde",
-				"name": "Cape Verde"
-			},
-			{
-				"value": "Cayman Islands",
-				"name": "Cayman Islands"
-			},
-			{
-				"value": "Central African Republic",
-				"name": "Central African Republic"
-			},
-			{
-				"value": "Chad",
-				"name": "Chad"
-			},
-			{
-				"value": "Chile",
-				"name": "Chile"
-			},
-			{
-				"value": "China",
-				"name": "China"
-			},
-			{
-				"value": "Christmas Island",
-				"name": "Christmas Island"
-			},
-			{
-				"value": "Clipperton Island",
-				"name": "Clipperton Island"
-			},
-			{
-				"value": "Cocos Islands",
-				"name": "Cocos Islands"
-			},
-			{
-				"value": "Colombia",
-				"name": "Colombia"
-			},
-			{
-				"value": "Comoros",
-				"name": "Comoros"
-			},
-			{
-				"value": "Cook Islands",
-				"name": "Cook Islands"
+				"name": "HERITAGE LINE",
+				"images": "images/introduction/special-3.jpg",
+				"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
+				"link": "javascript:void(0);"
 			}
 		],
 		"page_home": {
@@ -501,44 +317,6 @@
 				"lib",
 				"home",
 				"jquery-ui.min"
-			],
-			"special_offers": [
-				{
-					"name": "PREMIUM PACKAGE",
-					"images": "images/introduction/special-1.jpg",
-					"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
-					"link": "javascript:void(0);"
-				},
-				{
-					"name": "INDULGENCE PACKAGE",
-					"images": "images/introduction/special-2.jpg",
-					"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
-					"link": "javascript:void(0);"
-				},
-				{
-					"name": "HERITAGE LINE",
-					"images": "images/introduction/special-3.jpg",
-					"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
-					"link": "javascript:void(0);"
-				},
-				{
-					"name": "PREMIUM PACKAGE",
-					"images": "images/introduction/special-1.jpg",
-					"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
-					"link": "javascript:void(0);"
-				},
-				{
-					"name": "INDULGENCE PACKAGE",
-					"images": "images/introduction/special-2.jpg",
-					"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
-					"link": "javascript:void(0);"
-				},
-				{
-					"name": "HERITAGE LINE",
-					"images": "images/introduction/special-3.jpg",
-					"sumary": "The Premium package @USD299 + 15% tax & service charge per person. Total would be USD687.70 for 02 persons, with tax and service charge included.",
-					"link": "javascript:void(0);"
-				}
 			],
 			"discover": [
 				{
@@ -670,49 +448,129 @@
 				{
 					"images": "images/news/news-1.jpg",
 					"date": "April 26, 2022",
-					"author": "Angela Hansen",
-					"title": "Candle Light Dinner",
-					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-					"link": "javascript:void(0);"
+					"author": "Admin",
+					"title": "Vipol Mui Ne Hotels and Restaurants Adds Three Properties to Growing Portfolio",
+					"sumary": "Vipol Mui Ne Hotelst is a distinctive property located just 28 miles from downtown and 30 minutes from O’Hare International Airport. Featuring soaring Frank Lloyd Wright inspired architecture, the 308-room hotel brings classic Chicago and Midwestern hospitality together under one roof. With 7,000 sq. ft. of flexible meeting space and the unique Cave Bar located in the atrium.",
+					"link": "news-detail.html"
 				},
 				{
 					"images": "images/news/news-2.jpg",
 					"date": "April 26, 2022",
-					"author": "Angela Hansen",
-					"title": "Relaxing Bath",
-					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-					"link": "javascript:void(0);"
+					"author": "Admin",
+					"title": "Traveler Trends and Hotel Guest Behavior – What’s Changed, What’s New, What’s Next?",
+					"sumary": "While the global economy was under immense pressure with each passing lockdown and new restrictions, few industries were more gravely impacted than travel and tourism. Seemingly overnight, a bustling landscape rife with wanderlust and promise of culture, exploration, and escape came to a grinding halt, with no guarantee of a timely return to normal. Airport terminals and hotels fell uncharacteristically quiet as hospitality professionals questioned what the future had in store for their beloved industry. Now, finally, as the world takes what seems to be a collective breath, we find ourselves slowly emerging – ever cautiously – from the pandemic's wake. Around the world, industries are coming back to life, and, in hospitality, the appetite for travel has returned with a vengeance. Hotels are finally ready to rebuild and recover, and, to do so, hospitality brands must identify (and better yet, understand) the post-pandemic trends which will define this new landscape.",
+					"link": "news-detail.html"
 				},
 				{
 					"images": "images/news/news-3.jpg",
 					"date": "April 26, 2022",
-					"author": "Angela Hansen",
-					"title": "Table Decoration",
-					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-					"link": "javascript:void(0);"
+					"author": "Admin",
+					"title": "New York’s long-awaited Hard Rock Hotel is finally open",
+					"sumary": "The hotel’s location is prime for hitting the area’s many tourist attractions, but real music lovers will know that the Hard Rock is situated on New York City’s historic Music Row, the stretch of West 48th Street where music stores hawked guitar strings and drum sticks to everyone from revered musicians like Jimi Hendrick and Ringo Starr to up-and-coming acts and the everyday New Yorker.",
+					"link": "news-detail.html"
 				},
 				{
 					"images": "images/news/news-1.jpg",
 					"date": "April 26, 2022",
-					"author": "Angela Hansen",
-					"title": "Candle Light Dinner",
-					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-					"link": "javascript:void(0);"
+					"author": "Admin",
+					"title": "Vipol Mui Ne Hotels and Restaurants Adds Three Properties to Growing Portfolio",
+					"sumary": "Vipol Mui Ne Hotelst is a distinctive property located just 28 miles from downtown and 30 minutes from O’Hare International Airport. Featuring soaring Frank Lloyd Wright inspired architecture, the 308-room hotel brings classic Chicago and Midwestern hospitality together under one roof. With 7,000 sq. ft. of flexible meeting space and the unique Cave Bar located in the atrium.",
+					"link": "news-detail.html"
 				},
 				{
 					"images": "images/news/news-2.jpg",
 					"date": "April 26, 2022",
-					"author": "Angela Hansen",
-					"title": "Relaxing Bath",
-					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
-					"link": "javascript:void(0);"
+					"author": "Admin",
+					"title": "Traveler Trends and Hotel Guest Behavior – What’s Changed, What’s New, What’s Next?",
+					"sumary": "While the global economy was under immense pressure with each passing lockdown and new restrictions, few industries were more gravely impacted than travel and tourism. Seemingly overnight, a bustling landscape rife with wanderlust and promise of culture, exploration, and escape came to a grinding halt, with no guarantee of a timely return to normal. Airport terminals and hotels fell uncharacteristically quiet as hospitality professionals questioned what the future had in store for their beloved industry. Now, finally, as the world takes what seems to be a collective breath, we find ourselves slowly emerging – ever cautiously – from the pandemic's wake. Around the world, industries are coming back to life, and, in hospitality, the appetite for travel has returned with a vengeance. Hotels are finally ready to rebuild and recover, and, to do so, hospitality brands must identify (and better yet, understand) the post-pandemic trends which will define this new landscape.",
+					"link": "news-detail.html"
 				},
 				{
 					"images": "images/news/news-3.jpg",
 					"date": "April 26, 2022",
-					"author": "Angela Hansen",
+					"author": "Admin",
+					"title": "New York’s long-awaited Hard Rock Hotel is finally open",
+					"sumary": "The hotel’s location is prime for hitting the area’s many tourist attractions, but real music lovers will know that the Hard Rock is situated on New York City’s historic Music Row, the stretch of West 48th Street where music stores hawked guitar strings and drum sticks to everyone from revered musicians like Jimi Hendrick and Ringo Starr to up-and-coming acts and the everyday New Yorker.",
+					"link": "news-detail.html"
+				}
+			]
+		},
+		"page_newsDetail": {
+			"title_page": "News Detail",
+			"description_page": "News Detail",
+			"keywords_page": "News Detail",
+			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
+			"link_css_page": [
+				"lib",
+				"fonts",
+				"newsDetail"
+			],
+			"link_js_page": [
+				"lib",
+				"roomDetail",
+				"jquery-ui.min",
+				"home"
+			],
+			"breadcrumb": {
+				"url_img": "images/banner/banner-slide-1.jpg",
+				"menu": []
+			}
+		},
+		"page_serviesList": {
+			"title_page": "Sevices List",
+			"description_page": "Sevices List",
+			"keywords_page": "Sevices List",
+			"url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
+			"link_css_page": [
+				"lib",
+				"fonts",
+				"services"
+			],
+			"link_js_page": [
+				"lib",
+				"roomDetail",
+				"jquery-ui.min",
+				"home"
+			],
+			"breadcrumb": {
+				"url_img": "images/banner/banner-slide-1.jpg",
+				"menu": []
+			},
+			"servies_list": [
+				{
+					"images": "images/service/services-1.jpg",
+					"title": "Candle Light Dinner",
+					"sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/service/services-2.jpg",
+					"title": "Relaxing Bath",
+					"sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/service/services-3.jpg",
 					"title": "Table Decoration",
-					"sumary": "Ideal for two people, our carpeted Standard Room is spacious, pristine and includes a beautiful sea and city view from the...",
+					"sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/service/services-1.jpg",
+					"title": "Candle Light Dinner",
+					"sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/service/services-2.jpg",
+					"title": "Relaxing Bath",
+					"sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
+					"link": "javascript:void(0);"
+				},
+				{
+					"images": "images/service/services-3.jpg",
+					"title": "Table Decoration",
+					"sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
 					"link": "javascript:void(0);"
 				}
 			]

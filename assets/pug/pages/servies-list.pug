@@ -2,7 +2,7 @@ include ../mixin/mixin
 
 
 
-- var data_page = data.page_roomStandard
+- var data_page = data.page_serviesList
 
 doctype html
 html(lang='vi')
@@ -19,7 +19,12 @@ html(lang='vi')
             include ../layout/home/Booking
             |
             |
-            include ../layout/roomDetail/RoomDetail
+            |
+            |
+            +render_itemNews(data_page.servies_list)
+            |
+            |
+            include ../layout/rooms/PagingRoom
         |
         |
         include ../layout/general/footer
@@ -29,4 +34,3 @@ html(lang='vi')
         |
         |
         include ../layout/home/ButtonScroll
-    script(type='text/javascript' src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b18ecf9f4e878a3')

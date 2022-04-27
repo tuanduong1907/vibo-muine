@@ -626,6 +626,15 @@
 }
 .roomDetailWrapper .roomDetailRelatedTitle {
   margin-bottom: 15px;
+  font-family: "PlayfairDisplay";
+  color: #0f77be;
+}
+.roomDetailWrapper .roomDetailRelatedTitle::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 80px;
+  background-color: #0f77be;
 }
 .roomDetailWrapper .roomDetailSlide {
   width: 100%;
@@ -742,6 +751,10 @@
   align-items: center;
   margin-top: 15px;
 }
+.roomDetailWrapper .roomDetailTitleWrapper .roomDetailTitle {
+  font-size: 18px;
+  line-height: 28px;
+}
 .roomDetailWrapper .roomDetailTitleWrapper .roomDetailPirce {
   background-color: #ee4121;
   color: #ffffff;
@@ -751,6 +764,9 @@
       -ms-user-select: none;
           user-select: none;
   cursor: default;
+}
+.roomDetailWrapper .roomDetailTitleWrapper .wrapperPriceRoomDetail {
+  padding-top: 0;
 }
 .roomDetailWrapper .roomDetailContentWrapper {
   display: flex;
@@ -780,6 +796,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalFacilitiesWrapper .roomDetalFacilitiesList {
   flex: 1;
@@ -1036,10 +1053,12 @@
   }
 
   .wrapperPriceRoom .priceRoom {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .wrapperPriceRoom .priceRoom.haveDiscount {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .wrapperButtonRoom .buttonPrimary {
@@ -1054,8 +1073,7 @@
 /* Mobile & tablet: width <1024px */
 @media only screen and (max-width: 1023px) {
   .roomDetailWrapper .rowItem {
-    flex-direction: column-reverse;
-    gap: 30px;
+    gap: 15px;
   }
 }
 /* Mobie: width < 740px */
@@ -1073,6 +1091,9 @@
 .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetailInfo {
     margin-top: 15px;
   }
+  .roomDetailWrapper .wrapShare {
+    margin-top: 15px;
+  }
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
@@ -1081,6 +1102,14 @@
   }
   .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem:first-child {
     width: 60%;
+  }
+  .roomDetailWrapper .roomDetailContentWrapper .roomDetailContentItem .roomDetalFacilitiesWrapper {
+    margin-bottom: 0;
+  }
+  .roomDetailWrapper .listRoom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 /* PC Low */
