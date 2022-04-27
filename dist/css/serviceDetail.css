@@ -1672,6 +1672,10 @@
     font-size: 18px;
     line-height: 28px;
   }
+  .roomDetailWrapper .roomDetailTitleWrapper .wrapperPriceRoomDetail .priceRoom:last-child {
+    font-size: 18px;
+    line-height: 28px;
+  }
   .roomDetailWrapper .roomDetailContentWrapper {
     flex-direction: column;
   }

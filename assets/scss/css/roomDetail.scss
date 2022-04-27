@@ -560,6 +560,14 @@
         font-size: 18px;
         line-height: 28px;
       }
+      .wrapperPriceRoomDetail{
+        .priceRoom{
+          &:last-child{
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
     }
     .roomDetailContentWrapper {
       flex-direction: column;
@@ -584,7 +592,6 @@
   //     }
   //   } 
   // } 
-
 }
 
 /* Tablet: width >= 740px and width < 1024px */
