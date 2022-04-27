@@ -201,8 +201,8 @@
     align-items: center;
     margin-top: 15px;
     .roomDetailTitle{
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 28px;
+      line-height: 34px;
     }
     .roomDetailPirce {
       background-color: $color4;
@@ -213,6 +213,13 @@
     }
     .wrapperPriceRoomDetail{
       padding-top: 0;
+      .priceRoom{
+        &:last-child{
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 34px;
+        }
+      }
     }
   }
   .roomDetailContentWrapper {
@@ -338,7 +345,7 @@
       align-items: center;
       border: 1px solid $color7;
       padding-bottom: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       &:hover {
         .wrapperImageRoom {
           .imageRoom {
@@ -548,6 +555,12 @@
 @media only screen and (max-width: 739px) {
   .roomDetailWrapper {
     margin-top: 15px;
+    .roomDetailTitleWrapper{
+      .roomDetailTitle{
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
     .roomDetailContentWrapper {
       flex-direction: column;
       .roomDetailContentItem {
@@ -571,6 +584,7 @@
   //     }
   //   } 
   // } 
+
 }
 
 /* Tablet: width >= 740px and width < 1024px */

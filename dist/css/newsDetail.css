@@ -265,6 +265,9 @@
   flex-direction: column;
   justify-content: center;
 }
+.newsDetailWrapper .newsDetailRelated .newsDetailRelatedWrapper .newsDetailRelatedList .newsDetailRelatedItem .newsDetailRelatedContent .newsDetailRelatedTitle {
+  margin-bottom: 0;
+}
 .newsDetailWrapper .newsDetailRelated .newsDetailRelatedWrapper .newsDetailRelatedList .newsDetailRelatedItem .newsDetailRelatedContent .newsDetailRelatedTitle a {
   font-size: 16px;
   line-height: 24px;

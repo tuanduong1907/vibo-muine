@@ -541,38 +541,93 @@
                 "images": "images/service/services-1.jpg",
                 "title": "Candle Light Dinner",
                 "sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
-                "link": "javascript:void(0);"
+                "link": "service-detail.html"
             },
             {
                 "images": "images/service/services-2.jpg",
                 "title": "Relaxing Bath",
                 "sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
-                "link": "javascript:void(0);"
+                "link": "service-detail.html"
             },
             {
                 "images": "images/service/services-3.jpg",
                 "title": "Table Decoration",
                 "sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
-                "link": "javascript:void(0);"
+                "link": "service-detail.html"
             },
             {
                 "images": "images/service/services-1.jpg",
                 "title": "Candle Light Dinner",
                 "sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
-                "link": "javascript:void(0);"
+                "link": "service-detail.html"
             },
             {
                 "images": "images/service/services-2.jpg",
                 "title": "Relaxing Bath",
                 "sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
-                "link": "javascript:void(0);"
+                "link": "service-detail.html"
             },
             {
                 "images": "images/service/services-3.jpg",
                 "title": "Table Decoration",
                 "sumary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut voluptatem harum vero cumque. Consectetur aliquid odio placeat, molestiae quae praesentium est. Dolores ipsam voluptates reprehenderit illum voluptatibus molestiae in.",
-                "link": "javascript:void(0);"
+                "link": "service-detail.html"
             }
         ]
+    },
+    "page_serviceDetail": {
+        "page_candleLightDinner": {
+            "title_page": "Candle Light Dinner",
+            "description_page": "Candle Light Dinner",
+            "keywords_page": "Candle Light Dinner",
+            "url_image_page": "https://demo.sweetsoft.vn/comodo-nha-trang-hotel/share.jpg",
+            "link_css_page": [
+                "lib",
+                "fonts",
+                "serviceDetail"
+            ],
+            "link_js_page": [
+                "lib",
+                "roomDetail",
+                "jquery-ui.min",
+                "home"
+            ],
+            "breadcrumb": {
+                "url_img": "images/banner/banner-slide-1.jpg",
+                "menu": []
+            },
+            "images_service": [
+                {
+                    "images": "images/service/servicesDinner/service-dinner-1.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-2.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-3.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-4.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-5.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-6.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-7.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-8.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-9.jpg"
+                },
+                {
+                    "images": "images/service/servicesDinner/service-dinner-10.jpg"
+                }
+            ]
+        }
     }
 }

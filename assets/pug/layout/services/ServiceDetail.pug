@@ -1,0 +1,88 @@
+.roomDetailWrapper.container
+    .row.rowItem 
+        .col-lg-8.colImg
+            .wrapSlideMainImg
+                .showSlideMainImg 
+                    each item in data.page_serviceDetail.page_candleLightDinner.images_service
+                        .itemSlide(data-src= item)
+                            .contentImg 
+                                .wrapImgResize.img16And9 
+                                    img(src= item.images)
+
+            .wrapSlideCtrlImg
+                .showSlideCtrlImg 
+                    each item in data.page_serviceDetail.page_candleLightDinner.images_service
+                        .itemSlide
+                            .contentImg 
+                                .wrapImgResize.img16And9 
+                                    img(src= item.images)
+            .roomDetailTitleWrapper 
+                h2.roomDetailTitle CANDLE LIGHT DINNER
+            .roomDetailContentWrapper
+                .roomDetailContentItem
+                    .roomDetailDescWrapper 
+                        h3.roomDetailDesc Description
+                        h4.roomDetailSubDesc Spend Great Time in Our Hotel!
+                        p.roomDetailDescText areena Kapoor Khan has surely learned the art of ruling social media. Whether it is a wedding, Sunday with family, or a get-together, the actress never fails to drop love-filled pictures on her Instagram account. Recently, Kareena took to her Instagram Stories and shared a glimpse of her candlelight dinner with her loved ones. In the pictures, Bebo was seen twinning in white with her husband Saif Ali Khan. They were also joined by Soha Ali Khan and Kunal Kemmu.
+                        p.roomDetailDescText In the picture shared by Kareena, we can see them seated at a dinner table with lit candles. Kareena and Saif are also joined by their friends Saleem Siddiqui and Alexandra Galligan. The actor captioned it, “Best crew (red heart emoji)” and also tagged Soha Ali Khan, Kunal Kemmu, and Alexandra.
+                        h3.roomDetailSubDesc Facilities
+                    .roomDetalFacilitiesWrapper 
+                        ul.roomDetalFacilitiesList
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Sauna
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Outdoor Kitchen
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Trees and Landscaping
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Family Room
+                        ul.roomDetalFacilitiesList
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Fireplace or fire pit
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Tennis Courts
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Sun Room
+                            li.roomDetalFacilitiesItem 
+                                svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512')
+                                    path(d='M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z')
+
+                                span Concrete Flooring
+            .wrapShare.clearfix
+                .titleShare Chia sẻ ngay:
+                .listBtnSharePost
+                    .addthis_inline_share_toolbox_wc4f
+        .col-lg-4
+            h3.roomDetailRelatedTitle Related Services 
+            ul.newsDetailRelatedList
+                each item in data.page_serviesList.servies_list
+                    li.newsDetailRelatedItem
+                        .row.newsDetailRelatedItemWrap
+                            .newsDetailRelatedImagesWrapper.col-lg-6.col-md-6.col-6
+                                .newsDetailRelatedImages
+                                    a(href="javascript:void(0);").wrapImgResize.img16And9.newsDetailRelatedImg
+                                        img(src= item.images, alt= item.title)
+                            .newsDetailRelatedContent.col-lg-6.col-md-6.col-6
+                                h4.newsDetailRelatedTitle
+                                    a(href="javascript:void(0);")=item.title
