@@ -1,0 +1,104 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+// mixins
+@import "../abstracts/mixins";
+// end mixin
+
+// main slide
+@import "../layouts/mainSlide";
+// end main slide
+@import "../layouts/room";
+//
+
+// breadcrumb
+@import "../layouts/breadcrumb";
+// end breadcrumb
+@import "../components/wrapImgResize";
+
+// paging
+@import "../components/pagging";
+// end paging
+
+.libraryWrapper {
+  padding-block: 40px;
+  .libraryList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .libraryItem {
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        .libraryItemImagesLink {
+          transform: scale(1.2);
+        }
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: all 0.2 linear;
+        z-index: 1;
+      }
+      .libraryItemImagesLink {
+        transition: all linear 0.3s;
+      }
+      .libraryTitleWrapper {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        z-index: 2;
+        .libraryTitle {
+          color: $color1;
+          a {
+            font-size: 24px;
+            line-height: 32px;
+            transition: all linear 0.2s;
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+          .libraryTitleMore {
+            font-size: 14px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .libraryWrapper {
+    padding-block: 30px;
+    .libraryList {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 1024px) {
+}

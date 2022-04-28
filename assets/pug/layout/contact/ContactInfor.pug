@@ -52,10 +52,10 @@ section.contact
                     .contactFormItem
                         label(for="message") Your Message:
                         textarea#message(name="message" placeholder="Please enter your email..." rows="3").formItem 
-                    button.button.btnFormContact SEND
-                    .wrapShare.clearfix
-                        .titleShare Chia sẻ ngay:
-
-                        .listBtnSharePost
-                            .addthis_inline_share_toolbox_wc4f
+                    .btnFormWrapper 
+                        .containerImageSecurityCode
+                            img.imageSecurityCode(src='images/introduction/capcha.jpg' alt='')
+                            a.buttonRefresh(href='javascript:void(0);')
+                                img.iconRefresh(src='images/icon/icon-refresh.png' alt='')
+                        button.button.btnFormContact SEND
 // end contact

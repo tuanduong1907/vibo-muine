@@ -13734,7 +13734,7 @@ a.ui-button:active,
 
 .wrapperHeader {
   position: fixed;
-  z-index: 9999;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -15145,5 +15145,21 @@ p {
   }
   .button:hover {
     background-color: #ee4121;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

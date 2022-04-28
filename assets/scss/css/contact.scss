@@ -31,9 +31,9 @@
       flex-direction: column;
       width: 40%;
     }
-    .googleMapWrap{
+    .googleMapWrap {
       width: 100%;
-      .googleMapImg{
+      .googleMapImg {
         width: 100% !important;
       }
     }
@@ -80,9 +80,13 @@
           }
         }
       }
-      .btnFormContact {
-        display: block;
-        margin-left: auto;
+      .btnFormWrapper {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        .btnFormContact {
+          display: block;
+        }
       }
     }
   }
@@ -95,8 +99,8 @@
     .googleMap {
       width: 100%;
     }
-    .contactContentItem{
-      &:last-child{
+    .contactContentItem {
+      &:last-child {
         width: 100%;
       }
     }
@@ -126,9 +130,6 @@
       &:last-child {
         gap: 15px;
       }
-    }
-    .btnFormContact {
-      width: 100%;
     }
   }
 }

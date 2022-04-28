@@ -242,9 +242,13 @@
 .contact .contactFormWrapper .contactForm .contactFormItem .formItem:focus {
   border: 1px solid #0f77be;
 }
-.contact .contactFormWrapper .contactForm .btnFormContact {
+.contact .contactFormWrapper .contactForm .btnFormWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .contactFormWrapper .contactForm .btnFormWrapper .btnFormContact {
   display: block;
-  margin-left: auto;
 }
 
 /* Mobile & tablet: width <1024px */
@@ -274,9 +278,6 @@
   }
   .contact .contactContentItem:last-child {
     gap: 15px;
-  }
-  .contact .btnFormContact {
-    width: 100%;
   }
 }
 /* Tablet: width >= 740px and width < 1024px */

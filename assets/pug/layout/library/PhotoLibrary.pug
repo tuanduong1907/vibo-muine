@@ -1,0 +1,16 @@
+//photo library list
+
+section.libraryWrapper.container 
+    ul.libraryList 
+        each item in data.page_photoLibrary.photos_list
+            li.libraryItem
+                a(href= item.link) 
+                    .overlay   
+                a(href= item.link).libraryItemImagesLink.wrapImgResize.img16And9
+                    img(src= item.images, alt= item.title)
+                .libraryTitleWrapper
+                    h2.libraryTitle
+                        a(href= item.link)=  item.title
+                        a(href= item.link).libraryTitleMore Chi Tiết 
+                
+//end photo library list
