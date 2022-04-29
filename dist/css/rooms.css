@@ -63,7 +63,7 @@
 }
 
 .wrapperRoom {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .wrapperDescriptionRoom {
@@ -416,6 +416,78 @@
   color: #ffffff;
 }
 
+.wrapperBottomWelcome {
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wrapperBenefitWelcome {
+  padding: 10px 0 24px;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.elementBenefitWelcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+.elementBenefitWelcome .imageBenefitWelcome {
+  width: 24px;
+  height: 24px;
+  margin: 10px 16px 10px 0;
+}
+.elementBenefitWelcome .textBenefitWelcome {
+  width: 122px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.wrapperRatting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperRatting img {
+  max-width: 305px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.wrapperRatting p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.wrapperRatting a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #0f77be;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.wrapperRatting a:hover {
+  color: #ee4121;
+}
+
+@media (max-width: 767.98px) {
+  .wrapperBenefitWelcome {
+    padding: 10px 0 20px;
+    margin-bottom: 15px;
+  }
+
+  .elementBenefitWelcome {
+    margin-top: 10px;
+  }
+
+  .wrapperBottomWelcome {
+    margin-bottom: 15px;
+  }
+}
 .roomListWrapper {
   padding-block: 40px;
   display: grid;

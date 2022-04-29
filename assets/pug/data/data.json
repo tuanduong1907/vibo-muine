@@ -408,7 +408,133 @@
 			"breadcrumb": {
 				"url_img": "images/banner/banner-slide-1.jpg",
 				"menu": []
-			}
+			},
+			"roomInfo": {
+				"kindOfRoom": "Room Standard",
+				"desc": "A first for a 4-star Boutique Hotel in Mui Ne, Vipol Muine Hotel offer split level living, surrounded by the latest high-tech comforts and conveniences.",
+				"roomSize": "45 - 50",
+				"view": "Beach View",
+				"beds": "Double bed: 1",
+				"Smoking": true,
+				"maxOccupancy": "4 Adults + 01 Child under 4"
+			},
+			"features": [
+				{
+					"text": "Elegantly luxurious with a décor that mixes contemporary style and Oriental chic; our stunning split-level Duplex suites enjoy magical views over the city’s rooftops. Entered via a hallway, the beautifully furnished ground floor contains a Kingbed room with stylish furnishings and silk cushions."
+				},
+				{
+					"text": "Upstairs, a king-size bed swathed in luxurious 500-thread count linens takes pride of place in the sumptuous bedroom. Adjacent to this lays a large light-filled bathroom with walk-in shower or separate bathtub."
+				},
+				{
+					"text": "Textured furnishings and supreme attention to detail differentiate these remarkable two-floor suites from all others."
+				}
+			],
+			"facilities": [
+				{
+					"title": "Highlights",
+					"listFacilities": [
+						{
+							"service": "Special design for 4 Adults + 01 Child under 4"
+						},
+						{
+							"service": "Window/City View"
+						},
+						{
+							"service": "Daily complimentary international buffet breakfast"
+						},
+						{
+							"service": "Daily housekeeping & turndown service"
+						},
+						{
+							"service": "Electronic safe deposit box"
+						}
+					]
+				},
+				{
+					"title": "Technology",
+					"listFacilities": [
+						{
+							"service": "32’’ flat screen TV with cable program"
+						},
+						{
+							"service": "IDD telephone"
+						},
+						{
+							"service": "FREE Highspeed Wireless internet access"
+						},
+						{
+							"service": "Refrigerator & Minibar"
+						},
+						{
+							"service": "Dual split-type Air-conditioning"
+						},
+						{
+							"service": "Electrical adaptor"
+						},
+						{
+							"service": "Electronic Key Card System"
+						},
+						{
+							"service": "24-hour power back-up"
+						},
+						{
+							"service": "Security peephole"
+						}
+					]
+				},
+				{
+					"title": "Bed & Bath",
+					"listFacilities": [
+						{
+							"service": "1st Floor: 01 King bed or 02 Twin beds & 2nd Floor: 01 King bed"
+						},
+						{
+							"service": "Crib available upon request"
+						},
+						{
+							"service": "Bathroom with standing shower & bathtub Iron & ironing board"
+						},
+						{
+							"service": "Weighing scale"
+						},
+						{
+							"service": "Hair dryer"
+						},
+						{
+							"service": "Shaver outlet (220 volts)"
+						},
+						{
+							"service": "Deluxe toiletries"
+						},
+						{
+							"service": "Make up/shaving mirror"
+						},
+						{
+							"service": "Alarm clock"
+						}
+					]
+				},
+				{
+					"title": "Others",
+					"listFacilities": [
+						{
+							"service": "Welcome drinks & refresh towels"
+						},
+						{
+							"service": "Orientation map"
+						},
+						{
+							"service": "Daily complimentary fruit platter"
+						},
+						{
+							"service": "Coffe table & chair"
+						},
+						{
+							"service": "Tea bags & coffee making facilities"
+						}
+					]
+				}
+			]
 		},
 		"page_newsList": {
 			"title_page": "News List",
@@ -630,42 +756,206 @@
 				"lib",
 				"roomDetail",
 				"jquery-ui.min",
-				"home"
+				"home",
+				"photoDetail"
 			],
 			"breadcrumb": {
 				"url_img": "images/banner/banner-slide-1.jpg",
 				"menu": []
 			},
-			"photos_list": [
+			"photoLibraryList": [
 				{
-					"images": "images/banner/banner-slide-1.jpg",
-					"title": "Overview",
-					"link": "photo-overview.html"
+					"title": "overview",
+					"listImages": [
+						{
+							"images": "images/introduction/moment-1.jpg"
+						},
+						{
+							"images": "images/introduction/moment-2.jpg"
+						},
+						{
+							"images": "images/introduction/moment-3.jpg"
+						},
+						{
+							"images": "images/introduction/moment-4.jpg"
+						},
+						{
+							"images": "images/introduction/moment-5.jpg"
+						},
+						{
+							"images": "images/introduction/moment-6.jpg"
+						},
+						{
+							"images": "images/introduction/moment-7.jpg"
+						},
+						{
+							"images": "images/introduction/moment-8.jpg"
+						},
+						{
+							"images": "images/introduction/moment-9.jpg"
+						}
+					]
 				},
 				{
-					"images": "images/rooms/rooms-1.jpg",
-					"title": "Rooms",
-					"link": "photo-overview.html"
+					"title": "Room",
+					"listImages": [
+						{
+							"images": "images/introduction/moment-1.jpg"
+						},
+						{
+							"images": "images/introduction/moment-2.jpg"
+						},
+						{
+							"images": "images/introduction/moment-3.jpg"
+						},
+						{
+							"images": "images/introduction/moment-4.jpg"
+						},
+						{
+							"images": "images/introduction/moment-5.jpg"
+						},
+						{
+							"images": "images/introduction/moment-6.jpg"
+						},
+						{
+							"images": "images/introduction/moment-7.jpg"
+						},
+						{
+							"images": "images/introduction/moment-8.jpg"
+						},
+						{
+							"images": "images/introduction/moment-9.jpg"
+						}
+					]
 				},
 				{
-					"images": "images/service/servicesDinner/service-dinner-1.jpg",
 					"title": "Dinning",
-					"link": "photo-overview.html"
+					"listImages": [
+						{
+							"images": "images/introduction/moment-1.jpg"
+						},
+						{
+							"images": "images/introduction/moment-2.jpg"
+						},
+						{
+							"images": "images/introduction/moment-3.jpg"
+						},
+						{
+							"images": "images/introduction/moment-4.jpg"
+						},
+						{
+							"images": "images/introduction/moment-5.jpg"
+						},
+						{
+							"images": "images/introduction/moment-6.jpg"
+						},
+						{
+							"images": "images/introduction/moment-7.jpg"
+						},
+						{
+							"images": "images/introduction/moment-8.jpg"
+						},
+						{
+							"images": "images/introduction/moment-9.jpg"
+						}
+					]
 				},
 				{
-					"images": "images/introduction/special-3.jpg",
 					"title": "Recreation",
-					"link": "photo-overview.html"
+					"listImages": [
+						{
+							"images": "images/introduction/moment-1.jpg"
+						},
+						{
+							"images": "images/introduction/moment-2.jpg"
+						},
+						{
+							"images": "images/introduction/moment-3.jpg"
+						},
+						{
+							"images": "images/introduction/moment-4.jpg"
+						},
+						{
+							"images": "images/introduction/moment-5.jpg"
+						},
+						{
+							"images": "images/introduction/moment-6.jpg"
+						},
+						{
+							"images": "images/introduction/moment-7.jpg"
+						},
+						{
+							"images": "images/introduction/moment-8.jpg"
+						},
+						{
+							"images": "images/introduction/moment-9.jpg"
+						}
+					]
 				},
 				{
-					"images": "images/banner/banner-slide-2.jpg",
 					"title": "Meetings & Events",
-					"link": "photo-overview.html"
+					"listImages": [
+						{
+							"images": "images/introduction/moment-1.jpg"
+						},
+						{
+							"images": "images/introduction/moment-2.jpg"
+						},
+						{
+							"images": "images/introduction/moment-3.jpg"
+						},
+						{
+							"images": "images/introduction/moment-4.jpg"
+						},
+						{
+							"images": "images/introduction/moment-5.jpg"
+						},
+						{
+							"images": "images/introduction/moment-6.jpg"
+						},
+						{
+							"images": "images/introduction/moment-7.jpg"
+						},
+						{
+							"images": "images/introduction/moment-8.jpg"
+						},
+						{
+							"images": "images/introduction/moment-9.jpg"
+						}
+					]
 				},
 				{
-					"images": "images/banner/banner-slide-2.jpg",
-					"title": "Meetings & Events",
-					"link": "photo-overview.html"
+					"id": 1,
+					"title": "overview",
+					"listImages": [
+						{
+							"images": "images/introduction/moment-1.jpg"
+						},
+						{
+							"images": "images/introduction/moment-2.jpg"
+						},
+						{
+							"images": "images/introduction/moment-3.jpg"
+						},
+						{
+							"images": "images/introduction/moment-4.jpg"
+						},
+						{
+							"images": "images/introduction/moment-5.jpg"
+						},
+						{
+							"images": "images/introduction/moment-6.jpg"
+						},
+						{
+							"images": "images/introduction/moment-7.jpg"
+						},
+						{
+							"images": "images/introduction/moment-8.jpg"
+						},
+						{
+							"images": "images/introduction/moment-9.jpg"
+						}
+					]
 				}
 			]
 		},

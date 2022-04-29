@@ -1,112 +1,44 @@
-.wrapperWelcome{
-    padding-block: 40px;
+//tripAdvisorTraveler
+@import "../components/tripAdvisorTraveler";
+// end tripAdvisorTraveler
+
+.wrapperWelcome {
+  padding-block: 40px;
 }
 
-.wrapperTextWelcome{
-    padding-top: 20px;
-    p{
-        font-size: 16px;
-        line-height: 22px;
-        color: $color8;
-        text-align: center;
-        margin-bottom: 8px;
-        @include splitText(8, 166px);
+.wrapperTextWelcome {
+  padding-block: 20px;
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color8;
+    text-align: center;
+    margin-bottom: 8px;
+    @include splitText(8, 166px);
+  }
+  a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: $color3;
+    transition: all 0.5s;
+    &:hover {
+      color: $color4;
     }
-    a{
-        display: inline-block;
-        font-size: 16px;
-        line-height: 22px;
-        text-decoration: none;
-        color: $color3;
-        transition: all .5s;
-        &:hover{
-            color: $color4;
-        }
-    }
+  }
 }
 
-
-@media (max-width: 575.98px){
-    .wrapperTextWelcome{
-        p{
-            font-size: 14px;
-            line-height: 20px;
-            .readMoreWelcome{
-                font-size: 14px;
-                line-height: 20px;
-               
-            }
-        }
-    }
-}
-
-
-// bottom welcome 
-.wrapperBottomWelcome{
-    justify-content: end;
-    align-items: center;
-    .elementBottomWelcome{
-        margin-top: 20px;
-    }
-}
-
-.wrapperBenefitWelcome {
-    padding: 10px 0 24px;
-    border-top: 1px solid $color5;
-    border-bottom: 1px solid $color5;
-}
-.elementBenefitWelcome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 14px;
-    .imageBenefitWelcome{
-        width: 24px;
-        height: 24px;
-        margin: 10px 16px 10px 0;
-    }
-    .textBenefitWelcome{
-        width: 122px;
+@media (max-width: 575.98px) {
+  .wrapperTextWelcome {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      .readMoreWelcome {
         font-size: 14px;
         line-height: 20px;
-        color: $color8;
+      }
     }
+  }
 }
-
-.wrapperRatting{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    img{
-        max-width: 305px;
-        height: 30px;
-        margin-bottom: 5px;
-    }
-    p{
-        font-size: 14px;
-        line-height: 20px;
-        color: $color8;
-        margin-bottom: 5px;
-    }
-    a{
-        font-size: 14px;
-        line-height: 20px;
-        color: $color3;
-        text-decoration: none;
-        transition: all .5s;
-        &:hover{
-            color: $color4;
-        }
-    }
-}
-
-@media (max-width: 767.98px){
-    .wrapperBenefitWelcome {
-        padding: 10px 0 20px;
-    }
-    .elementBenefitWelcome{
-        margin-top: 10px;
-    }
-}
-// end bottom welcome 

@@ -20,7 +20,13 @@
 @import "../layouts/room";
 // end room
 
+// news detail
 @import "../css/newsDetail.scss";
+// end news detail
+
+//tripAdvisorTraveler
+@import "../components/tripAdvisorTraveler";
+// end tripAdvisorTraveler
 
 .btnSlideType1 {
   position: absolute;
@@ -52,15 +58,21 @@
 
   &:hover {
     color: $color3;
+    opacity: 1;
   }
 }
 .roomDetailWrapper {
   // display: flex;
   margin-top: 40px;
+  .rowItem{
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
   .roomDetailRelatedTitle {
     margin-bottom: 15px;
     font-family: $font2;
     color: $color3;
+    @include text36;
     &::after {
       display: block;
       content: "";
@@ -69,132 +81,162 @@
       background-color: $color3;
     }
   }
-  .roomDetailSlide {
-    width: 100%;
-    .wrapSlideMainImg {
-      width: 100%;
-      .btnSlide {
-        background-color: $color3;
+  .wrapSlideMainImg {
+    position: relative;
+    width: calc(100% - 200px);
+    margin-left: auto;
+    .btnSlide {
+      // background-color: $color3;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      opacity: 0.7;
+
+      // &:hover {
+      //   background-color: $color1;
+      // }
+
+      svg {
+        display: inline-block;
         width: 40px;
         height: 40px;
-        text-align: center;
+      }
 
-        &:hover {
-          background-color: $color1;
-        }
+      &.left {
+        left: 0;
+      }
 
-        svg {
-          display: inline-block;
-          width: 10px;
-          height: 40px;
-        }
-
-        &.left {
-          left: 0;
-        }
-
-        &.right {
-          right: 0;
-        }
+      &.right {
+        right: 0;
       }
     }
-
-    .wrapSlideCtrlImg {
-      .itemSlide {
-        width: 100%;
-        .wrapImgResize {
-          cursor: pointer;
-          height: 55px;
-          width: 100%;
-          img {
-            @include opacity(0.4);
-            @include transition(0.5s);
-            height: 100%;
-            width: 100%;
+    .descTableWrapper {
+      padding: 24px;
+      width: 320px;
+      left: -20%;
+      background-color: $color9;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .descTableTitle{
+        @include text20;
+        margin-bottom: 15px;
+      }
+      .descTableContent{
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+      .descTableServiceList {
+        .descTableServiceItem {
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          svg {
+            height: 16px;
+            margin-right: 8px;
           }
-        }
-
-        &.slick-center {
-          .wrapImgResize {
-            img {
-              @include opacity(1);
-            }
-          }
-        }
-
-        &:hover {
-          .wrapImgResize {
-            img {
-              @include opacity(1);
-            }
+          span{
+            @include text14;
           }
         }
       }
     }
+  }
 
-    .titleInfoDetail {
-      margin-top: 30px;
-      color: $color2;
-
-      &::after {
-        background-color: $color3;
-      }
-    }
-
-    .wrapTextDetail {
-      p {
-        margin: 15px 0 0 0;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      a {
-        color: $color3;
-        @include transition(0.5s);
-        text-decoration: underline;
-
-        &:hover {
-          color: $color15;
-        }
-      }
-    }
-
-    .stopMoveSlide {
-      .slick-track {
-        left: 0 !important;
-        display: table;
-        margin: auto;
-        top: 0 !important;
-        @include transform(unset !important);
-        @include transform(none !important);
-      }
-    }
-    .roomDetailSlideImages {
+  .wrapSlideCtrlImg {
+    width: calc(100% - 200px);
+    margin-left: auto;
+    .itemSlide {
       width: 100%;
-      .wrapSlideCtrlImg {
-        .contentImg {
-          padding: 2px 1px;
+      .wrapImgResize {
+        cursor: pointer;
+        height: 55px;
+        width: 100%;
+        img {
+          @include opacity(0.4);
+          @include transition(0.5s);
+          height: 100%;
+          width: 100%;
         }
       }
 
-      .wrapSlideMainImg {
-        cursor: pointer;
+      &.slick-center {
+        .wrapImgResize {
+          img {
+            @include opacity(1);
+          }
+        }
+      }
+
+      &:hover {
+        .wrapImgResize {
+          img {
+            @include opacity(1);
+          }
+        }
+      }
+    }
+  }
+
+  .titleInfoDetail {
+    margin-top: 30px;
+    color: $color2;
+
+    &::after {
+      background-color: $color3;
+    }
+  }
+
+  .wrapTextDetail {
+    p {
+      margin: 15px 0 0 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: $color3;
+      @include transition(0.5s);
+      text-decoration: underline;
+
+      &:hover {
+        color: $color15;
+      }
+    }
+  }
+
+  .stopMoveSlide {
+    .slick-track {
+      left: 0 !important;
+      display: table;
+      margin: auto;
+      top: 0 !important;
+      @include transform(unset !important);
+      @include transform(none !important);
+    }
+  }
+  .roomDetailSlideImages {
+    width: 100%;
+    .wrapSlideCtrlImg {
+      .contentImg {
+        padding: 2px 1px;
       }
     }
 
-    .wrapImgResize.img16And9 {
-      height: 500px;
+    .wrapSlideMainImg {
+      cursor: pointer;
     }
+  }
 
-    .slick-slide {
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .slick-slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .roomDetailTitleWrapper {
@@ -202,9 +244,10 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 15px;
+    width: calc(100% - 200px);
+    margin-left: auto;
     .roomDetailTitle {
-      font-size: 28px;
-      line-height: 34px;
+      @include text30;
       color: $color3;
       font-family: $font2;
     }
@@ -216,7 +259,7 @@
       cursor: default;
     }
     .wrapperPriceRoomDetail {
-      padding-top: 0;
+      padding: 0 ;
       .priceRoom {
         &:last-child {
           font-weight: 500;
@@ -228,7 +271,7 @@
   }
   .roomDetailContentWrapper {
     display: flex;
-    margin-top: 15px;
+    margin-top: 20px;
     gap: 0 30px;
     .roomDetailContentItem {
       &:first-child {
@@ -238,22 +281,24 @@
         flex: 1;
       }
       .roomDetailDesc {
-        font-size: 24px;
-        line-height: 32px;
+        @include text48;
+        text-align: center;
+        font-family: $font2;
+        color: $color3
       }
       .roomDetailSubDesc {
-        font-size: 18px;
-        line-height: 28px;
-        margin-top: 15px;
+        @include text24;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
       .roomDetailDescText {
-        font-size: 14px;
-        line-height: 20px;
+        @include text14;
+        margin-bottom: 20px;
       }
       .roomDetalFacilitiesWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
         margin-bottom: 20px;
         .roomDetalFacilitiesList {
           flex: 1;
@@ -265,8 +310,9 @@
             display: flex;
             align-items: center;
             svg {
-              height: 8px;
+              height: 6px;
               fill: $color3;
+              flex-shrink: 0;
             }
           }
         }
@@ -307,16 +353,23 @@
       }
     }
   }
+  .wrapperRoom{
+    margin-top: 20px !important;
+  }
 }
 
 // Slide
 .slick-slide img {
   width: 100%;
 }
-.showSlideCtrlImg {
-  .slick-active.slick-current {
-    opacity: 0.5 !important;
-    transition: all linear 0.2s;
+.wrapSlideCtrlImg {
+  .showSlideCtrlImg {
+    .slick-active {
+      .slick-current {
+        opacity: 0.7 !important;
+        transition: all linear 0.2s;
+      }
+    }
   }
 }
 
@@ -335,27 +388,23 @@
   }
 }
 
-.wrapperListRoom {
-  padding-top: 16px;
-}
-
 .roomRelatedList {
   margin-bottom: 40px;
   .roomRelatedItem {
     margin-bottom: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    &:hover{
-      .roomDetailRelatedImg{
-          transform: scale(1.1)
+    &:hover {
+      .roomDetailRelatedImg {
+        transform: scale(1.1);
       }
     }
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
-    .roomDetailRelatedImages{
+    .roomDetailRelatedImages {
       overflow: hidden;
-      .roomDetailRelatedImg{
-        transition: all linear .25s;
+      .roomDetailRelatedImg {
+        transition: all linear 0.25s;
       }
     }
     .roomDetailRelatedInfo {
@@ -402,7 +451,6 @@
 .wrapShare {
   margin-bottom: 40px;
 }
-
 
 // Responsive
 @media (max-width: 991.98px) {
@@ -468,6 +516,45 @@
   .roomDetailWrapper {
     .rowItem {
       gap: 15px;
+      margin-top: 15px;
+    }
+    .roomDetailContentWrapper {
+      .roomDetailContentItem {
+        .roomDetalFacilitiesWrapper {
+          display: block;
+          .roomDetalFacilitiesList{
+            .roomDetalFacilitiesTitle{
+              @include text16;
+            }
+            .roomDetalFacilitiesItem{
+              span{
+                @include text12;
+              }
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .wrapSlideMainImg {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 20px;
+      width: 100%;
+      .descTableWrapper{
+        position: static;
+        transform: translateY(0);
+        width: 100%;
+        padding: 15px 15px 7px;
+        .descTableTitle{
+          margin-bottom: 0;
+        }
+      }
+    }
+    .wrapSlideCtrlImg{
+      width: 100%;
     }
   }
 }
@@ -475,8 +562,12 @@
 /* Mobie: width < 740px */
 @media only screen and (max-width: 739px) {
   .roomDetailWrapper {
-    margin-top: 15px;
+    margin-top: 30px;
+    .rowItem{
+      gap: 0;
+    }
     .roomDetailTitleWrapper {
+      width: 100%;
       .roomDetailTitle {
         font-size: 18px;
         line-height: 28px;
@@ -492,6 +583,7 @@
     }
     .roomDetailContentWrapper {
       flex-direction: column;
+      margin-top: 15px;
       .roomDetailContentItem {
         &:first-child {
           width: 100%;
@@ -500,25 +592,45 @@
         .roomDetailInfo {
           margin-top: 15px;
         }
+        .roomDetailDescWrapper{
+          .roomDetailDesc{
+            @include text36;
+          }
+          .roomDetailSubDesc{
+            @include text18;
+            margin-block: 15px;
+          }
+          .roomDetailDescText{
+            @include text12;
+            margin-bottom: 15px;
+          }
+        }
+        .roomDetalFacilitiesWrapper{
+          margin-bottom: 0;
+        }
       }
     }
     .wrapShare {
-      margin-top: 15px;
+      margin-block: 15px;
     }
+    .roomDetailRelatedTitle{
+      @include text24;
+    }
+
   }
   .roomRelatedList {
     .roomRelatedItem {
       .roomDetailRelatedInfo {
-        .roomRelatedPrice{
-          .roomRelatedPriceOld{
+        .roomRelatedPrice {
+          .roomRelatedPriceOld {
             font-size: 8px;
             line-height: 12px;
           }
-          .roomRelatedPriceCurrent{
+          .roomRelatedPriceCurrent {
             font-size: 14px;
             line-height: 16px;
           }
-        } 
+        }
       }
     }
   }
@@ -547,23 +659,23 @@
   .roomRelatedList {
     .roomRelatedItem {
       .roomDetailRelatedInfo {
-        .roomRelatedInfoTitle{
-          a{
+        .roomRelatedInfoTitle {
+          a {
             font-size: 28px;
             line-height: 34px;
           }
         }
-        .roomRelatedPrice{
+        .roomRelatedPrice {
           margin-top: 15px;
-          .roomRelatedPriceOld{
+          .roomRelatedPriceOld {
             font-size: 14px;
             line-height: 20px;
           }
-          .roomRelatedPriceCurrent{
+          .roomRelatedPriceCurrent {
             font-size: 18px;
             line-height: 24px;
           }
-        } 
+        }
       }
     }
   }
