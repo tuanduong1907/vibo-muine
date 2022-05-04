@@ -13666,22 +13666,20 @@ a.ui-button:active,
   padding-top: 30px;
   z-index: 9;
 }
-.slideArrowPrimary:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 20px;
-  padding-top: 17px;
-  transition: all 0.5s;
-}
 .slideArrowPrimary.prevArrow {
   left: 4px;
 }
 .slideArrowPrimary.prevArrow:before {
   border-bottom: 3px solid #0f77be;
   border-left: 3px solid #0f77be;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 20px;
+  padding-top: 17px;
+  transition: all 0.5s;
 }
 .slideArrowPrimary.nextArrow {
   right: 4px;
@@ -13689,6 +13687,14 @@ a.ui-button:active,
 .slideArrowPrimary.nextArrow:before {
   border-top: 3px solid #0f77be;
   border-right: 3px solid #0f77be;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 20px;
+  padding-top: 17px;
+  transition: all 0.5s;
 }
 
 .btnSlideType1 {
@@ -14184,6 +14190,10 @@ a.ui-button:active,
 }
 /* Mobile & tablet: width <1024px */
 @media only screen and (max-width: 1023px) {
+  .wrapperMainMenu {
+    height: 100%;
+  }
+
   .headerContactWrapper {
     display: none;
   }
