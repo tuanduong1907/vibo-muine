@@ -81,9 +81,11 @@
       background-color: $color3;
     }
   }
-  .wrapSlideMainImgRoom {
+  .wrapSlideMainImg {
     position: relative;
-    width: calc(100% - 200px);
+    &.wrapSlideMainImgRoom {
+      width: calc(100% - 200px);
+    }
     margin-left: auto;
     .btnSlide {
       // background-color: $color3;
@@ -144,8 +146,10 @@
     }
   }
 
-  .wrapSlideCtrlImg.wrapSlideCtrlImgRoom {
-    width: calc(100% - 200px);
+  .wrapSlideCtrlImg {
+    &.wrapSlideCtrlImgRoom {
+      width: calc(100% - 200px);
+    }
     margin-left: auto;
     .itemSlide {
       width: 100%;

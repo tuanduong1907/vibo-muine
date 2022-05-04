@@ -1637,29 +1637,31 @@
   width: 80px;
   background-color: #0f77be;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom {
+.roomDetailWrapper .wrapSlideMainImg {
   position: relative;
-  width: calc(100% - 200px);
   margin-left: auto;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .btnSlide {
+.roomDetailWrapper .wrapSlideMainImg.wrapSlideMainImgRoom {
+  width: calc(100% - 200px);
+}
+.roomDetailWrapper .wrapSlideMainImg .btnSlide {
   width: 40px;
   height: 40px;
   text-align: center;
   opacity: 0.7;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .btnSlide svg {
+.roomDetailWrapper .wrapSlideMainImg .btnSlide svg {
   display: inline-block;
   width: 40px;
   height: 40px;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .btnSlide.left {
+.roomDetailWrapper .wrapSlideMainImg .btnSlide.left {
   left: 0;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .btnSlide.right {
+.roomDetailWrapper .wrapSlideMainImg .btnSlide.right {
   right: 0;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .descTableWrapper {
+.roomDetailWrapper .wrapSlideMainImg .descTableWrapper {
   padding: 24px;
   width: 320px;
   left: -20%;
@@ -1668,42 +1670,44 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .descTableWrapper .descTableTitle {
+.roomDetailWrapper .wrapSlideMainImg .descTableWrapper .descTableTitle {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 15px;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .descTableWrapper .descTableContent {
+.roomDetailWrapper .wrapSlideMainImg .descTableWrapper .descTableContent {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 15px;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .descTableWrapper .descTableServiceList .descTableServiceItem {
+.roomDetailWrapper .wrapSlideMainImg .descTableWrapper .descTableServiceList .descTableServiceItem {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .descTableWrapper .descTableServiceList .descTableServiceItem svg {
+.roomDetailWrapper .wrapSlideMainImg .descTableWrapper .descTableServiceList .descTableServiceItem svg {
   height: 16px;
   margin-right: 8px;
 }
-.roomDetailWrapper .wrapSlideMainImgRoom .descTableWrapper .descTableServiceList .descTableServiceItem span {
+.roomDetailWrapper .wrapSlideMainImg .descTableWrapper .descTableServiceList .descTableServiceItem span {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom {
-  width: calc(100% - 200px);
+.roomDetailWrapper .wrapSlideCtrlImg {
   margin-left: auto;
 }
-.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom .itemSlide {
+.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom {
+  width: calc(100% - 200px);
+}
+.roomDetailWrapper .wrapSlideCtrlImg .itemSlide {
   width: 100%;
 }
-.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom .itemSlide .wrapImgResize {
+.roomDetailWrapper .wrapSlideCtrlImg .itemSlide .wrapImgResize {
   cursor: pointer;
   height: 55px;
   width: 100%;
 }
-.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom .itemSlide .wrapImgResize img {
+.roomDetailWrapper .wrapSlideCtrlImg .itemSlide .wrapImgResize img {
   opacity: 0.4;
   filter: alpha(opacity=40);
   transition: 0.5s;
@@ -1714,11 +1718,11 @@
   height: 100%;
   width: 100%;
 }
-.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom .itemSlide.slick-center .wrapImgResize img {
+.roomDetailWrapper .wrapSlideCtrlImg .itemSlide.slick-center .wrapImgResize img {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom .itemSlide:hover .wrapImgResize img {
+.roomDetailWrapper .wrapSlideCtrlImg .itemSlide:hover .wrapImgResize img {
   opacity: 1;
   filter: alpha(opacity=100);
 }
