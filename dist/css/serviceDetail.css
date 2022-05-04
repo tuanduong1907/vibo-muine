@@ -2072,7 +2072,10 @@
   .roomDetailWrapper .wrapSlideMainImg .descTableWrapper .descTableTitle {
     margin-bottom: 0;
   }
-  .roomDetailWrapper .wrapSlideCtrlImg {
+  .roomDetailWrapper .wrapSlideMainImg.wrapSlideMainImgRoom {
+    width: 100%;
+  }
+  .roomDetailWrapper .wrapSlideCtrlImg.wrapSlideCtrlImgRoom {
     width: 100%;
   }
 }

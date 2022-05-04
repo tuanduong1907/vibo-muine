@@ -40,8 +40,6 @@ $(document).ready(function () {
         $(".wrapperSubMenu").slideToggle();
     })
 
-
-
     $(".buttonMainMenuTopHeader").on("click", function () {
         if($(document).width() < 992){
             $(this).children(".iconShowMenu, .iconHideMenu").fadeToggle();

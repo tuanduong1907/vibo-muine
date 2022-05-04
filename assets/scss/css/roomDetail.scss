@@ -559,8 +559,15 @@
         }
       }
     }
+    .wrapSlideMainImg{
+      &.wrapSlideMainImgRoom{
+        width: 100%;
+      }
+    }
     .wrapSlideCtrlImg {
-      width: 100%;
+      &.wrapSlideCtrlImgRoom{
+        width: 100%;
+      }
     }
   }
 }
@@ -639,6 +646,7 @@
       }
     }
   }
+
 }
 
 /* Tablet: width >= 740px and width < 1024px */
