@@ -19,88 +19,87 @@ section.libraryWrapper.container
         .libraryTabItem.active(data-tab= '1') All
         .libraryTabItem(data-tab='2') Overview
         .libraryTabItem(data-tab='3') Room
-        .libraryTabItem(data-tab='4') Dinning
-        .libraryTabItem(data-tab='5') Recreation
+        .libraryTabItem(data-tab='4') Recreation
+        .libraryTabItem(data-tab='5') Dinning
         .libraryTabItem(data-tab='6') Meetings & Events
     .photoTabListBody
-        each item in data.page_photoLibrary.photoLibraryList
-            ul.photoList.active(data-tab= "1")
-                .wrapDiscover.wrapImgDetail
-                    .container-xl
-                        .contentItem
-                            .listItem
-                                .row.rowList.row3.showGalleryImgDetail
-                                    each item in data.page_photoDetails.page_photoOverview.photos_list
-                                        .colItem(data-src= item.images)
-                                            .contentItem
-                                                .wrapImg.wrapImagePhoto
-                                                    .overlayImage
-                                                    a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
-                                                        img(src= item.images, alt= item.title)
-            ul.photoList.active(data-tab= "2")
-                .wrapDiscover.wrapImgDetail
-                    .container-xl
-                        .contentItem
-                            .listItem
-                                .row.rowList.row3.showGalleryImgDetail
-                                    each item in data.page_photoDetails.page_photoOverview.photos_list
-                                        .colItem(data-src= item.images)
-                                            .contentItem
-                                                .wrapImg.wrapImagePhoto
-                                                    .overlayImage
-                                                    a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
-                                                        img(src= item.images, alt= item.title)
-            ul.photoList.active(data-tab= "3")
-                .wrapDiscover.wrapImgDetail
-                    .container-xl
-                        .contentItem
-                            .listItem
-                                .row.rowList.row3.showGalleryImgDetail
-                                    each item in data.page_photoDetails.page_photoOverview.photos_list
-                                        .colItem(data-src= item.images)
-                                            .contentItem
-                                                .wrapImg.wrapImagePhoto
-                                                    .overlayImage
-                                                    a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
-                                                        img(src= item.images, alt= item.title)
-            ul.photoList.active(data-tab= "4")
-                .wrapDiscover.wrapImgDetail
-                    .container-xl
-                        .contentItem
-                            .listItem
-                                .row.rowList.row3.showGalleryImgDetail
-                                    each item in data.page_photoDetails.page_photoOverview.photos_list
-                                        .colItem(data-src= item.images)
-                                            .contentItem
-                                                .wrapImg.wrapImagePhoto
-                                                    .overlayImage
-                                                    a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
-                                                        img(src= item.images, alt= item.title)
-            ul.photoList.active(data-tab= "5")
-                .wrapDiscover.wrapImgDetail
-                    .container-xl
-                        .contentItem
-                            .listItem
-                                .row.rowList.row3.showGalleryImgDetail
-                                    each item in data.page_photoDetails.page_photoOverview.photos_list
-                                        .colItem(data-src= item.images)
-                                            .contentItem
-                                                .wrapImg.wrapImagePhoto
-                                                    .overlayImage
-                                                    a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
-                                                        img(src= item.images, alt= item.title)
-            ul.photoList.active(data-tab= "6")
-                .wrapDiscover.wrapImgDetail
-                    .container-xl
-                        .contentItem
-                            .listItem
-                                .row.rowList.row3.showGalleryImgDetail
-                                    each item in data.page_photoDetails.page_photoOverview.photos_list
-                                        .colItem(data-src= item.images)
-                                            .contentItem
-                                                .wrapImg.wrapImagePhoto
-                                                    .overlayImage
-                                                    a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
-                                                        img(src= item.images, alt= item.title)
+        ul.photoList.active(data-tab= "1")
+            .wrapDiscover.wrapImgDetail
+                .container-xl
+                    .contentItem
+                        .listItem
+                            .row.rowList.row3.showGalleryImgDetail
+                                each item in data.rooms
+                                    .colItem(data-src= item.images)
+                                        .contentItem
+                                            .wrapImg.wrapImagePhoto
+                                                .overlayImage
+                                                a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
+                                                    img(src= item.images)
+        ul.photoList.active(data-tab= "2")
+            .wrapDiscover.wrapImgDetail
+                .container-xl
+                    .contentItem
+                        .listItem
+                            .row.rowList.row3.showGalleryImgDetail
+                                each item in data.slide_main
+                                    .colItem(data-src= item.url_img)
+                                        .contentItem
+                                            .wrapImg.wrapImagePhoto
+                                                .overlayImage
+                                                a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);')
+                                                    img(src= item.url_img)
+        ul.photoList.active(data-tab= "3")
+            .wrapDiscover.wrapImgDetail
+                .container-xl
+                    .contentItem
+                        .listItem
+                            .row.rowList.row3.showGalleryImgDetail
+                                each item in data.rooms
+                                    .colItem(data-src= item.images)
+                                        .contentItem
+                                            .wrapImg.wrapImagePhoto
+                                                .overlayImage
+                                                a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
+                                                    img(src= item.images)
+        ul.photoList.active(data-tab= "4")
+            .wrapDiscover.wrapImgDetail
+                .container-xl
+                    .contentItem
+                        .listItem
+                            .row.rowList.row3.showGalleryImgDetail
+                                each item in data.special_offers
+                                    .colItem(data-src= item.images)
+                                        .contentItem
+                                            .wrapImg.wrapImagePhoto
+                                                .overlayImage
+                                                a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
+                                                    img(src= item.images)
+        ul.photoList.active(data-tab= "5")
+            .wrapDiscover.wrapImgDetail
+                .container-xl
+                    .contentItem
+                        .listItem
+                            .row.rowList.row3.showGalleryImgDetail
+                                each item in data.rooms
+                                    .colItem(data-src= item.images)
+                                        .contentItem
+                                            .wrapImg.wrapImagePhoto
+                                                .overlayImage
+                                                a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
+                                                    img(src= item.images)
+        ul.photoList.active(data-tab= "6")
+            .wrapDiscover.wrapImgDetail
+                .container-xl
+                    .contentItem
+                        .listItem
+                            .row.rowList.row3.showGalleryImgDetail
+                                each item in data.rooms
+                                    .colItem(data-src= item.images)
+                                        .contentItem
+                                            .wrapImg.wrapImagePhoto
+                                                .overlayImage
+                                                a.wrapImgResize.img16And9.imagePhoto(href='javascript:void(0);', title= item.title)
+                                                    img(src= item.images)
 
 //end photo library list
