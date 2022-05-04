@@ -182,6 +182,14 @@
             transition: all .5s;
         }
     }
+    a{
+       text-decoration: underline !important;
+       transition: all .2 linear;
+       font-weight: 500;
+       &:hover{
+           color: $color3;
+       }
+    }
 }
 
 @media (max-width: 991.98px){
