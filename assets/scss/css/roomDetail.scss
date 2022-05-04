@@ -64,7 +64,7 @@
 .roomDetailWrapper {
   // display: flex;
   margin-top: 40px;
-  .rowItem{
+  .rowItem {
     justify-content: flex-end;
     margin-top: 20px;
   }
@@ -81,7 +81,7 @@
       background-color: $color3;
     }
   }
-  .wrapSlideMainImg {
+  .wrapSlideMainImgRoom {
     position: relative;
     width: calc(100% - 200px);
     margin-left: auto;
@@ -118,11 +118,11 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      .descTableTitle{
+      .descTableTitle {
         @include text20;
         margin-bottom: 15px;
       }
-      .descTableContent{
+      .descTableContent {
         font-size: 14px;
         line-height: 1.6;
         margin-bottom: 15px;
@@ -136,7 +136,7 @@
             height: 16px;
             margin-right: 8px;
           }
-          span{
+          span {
             @include text14;
           }
         }
@@ -144,7 +144,7 @@
     }
   }
 
-  .wrapSlideCtrlImg {
+  .wrapSlideCtrlImg.wrapSlideCtrlImgRoom {
     width: calc(100% - 200px);
     margin-left: auto;
     .itemSlide {
@@ -244,7 +244,9 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 15px;
-    width: calc(100% - 200px);
+    &.roomDetailTitleWrapperRoom {
+      width: calc(100% - 200px);
+    }
     margin-left: auto;
     .roomDetailTitle {
       @include text30;
@@ -259,7 +261,7 @@
       cursor: default;
     }
     .wrapperPriceRoomDetail {
-      padding: 0 ;
+      padding: 0;
       .priceRoom {
         &:last-child {
           font-weight: 500;
@@ -284,7 +286,7 @@
         @include text48;
         text-align: center;
         font-family: $font2;
-        color: $color3
+        color: $color3;
       }
       .roomDetailSubDesc {
         @include text24;
@@ -353,7 +355,7 @@
       }
     }
   }
-  .wrapperRoom{
+  .wrapperRoom {
     margin-top: 20px !important;
   }
 }
@@ -522,15 +524,15 @@
       .roomDetailContentItem {
         .roomDetalFacilitiesWrapper {
           display: block;
-          .roomDetalFacilitiesList{
-            .roomDetalFacilitiesTitle{
+          .roomDetalFacilitiesList {
+            .roomDetalFacilitiesTitle {
               @include text16;
             }
-            .roomDetalFacilitiesItem{
-              span{
+            .roomDetalFacilitiesItem {
+              span {
                 @include text12;
               }
-              &:last-child{
+              &:last-child {
                 margin-bottom: 0;
               }
             }
@@ -543,17 +545,17 @@
       flex-direction: column-reverse;
       gap: 20px;
       width: 100%;
-      .descTableWrapper{
+      .descTableWrapper {
         position: static;
         transform: translateY(0);
         width: 100%;
         padding: 15px 15px 7px;
-        .descTableTitle{
+        .descTableTitle {
           margin-bottom: 0;
         }
       }
     }
-    .wrapSlideCtrlImg{
+    .wrapSlideCtrlImg {
       width: 100%;
     }
   }
@@ -563,7 +565,7 @@
 @media only screen and (max-width: 739px) {
   .roomDetailWrapper {
     margin-top: 30px;
-    .rowItem{
+    .rowItem {
       gap: 0;
     }
     .roomDetailTitleWrapper {
@@ -592,20 +594,20 @@
         .roomDetailInfo {
           margin-top: 15px;
         }
-        .roomDetailDescWrapper{
-          .roomDetailDesc{
+        .roomDetailDescWrapper {
+          .roomDetailDesc {
             @include text36;
           }
-          .roomDetailSubDesc{
+          .roomDetailSubDesc {
             @include text18;
             margin-block: 15px;
           }
-          .roomDetailDescText{
+          .roomDetailDescText {
             @include text12;
             margin-bottom: 15px;
           }
         }
-        .roomDetalFacilitiesWrapper{
+        .roomDetalFacilitiesWrapper {
           margin-bottom: 0;
         }
       }
@@ -613,10 +615,9 @@
     .wrapShare {
       margin-block: 15px;
     }
-    .roomDetailRelatedTitle{
+    .roomDetailRelatedTitle {
       @include text24;
     }
-
   }
   .roomRelatedList {
     .roomRelatedItem {
