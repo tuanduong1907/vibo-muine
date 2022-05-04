@@ -14912,7 +14912,6 @@ a.ui-button:active,
 .wrapperCopyright a {
   text-decoration: underline !important;
   transition: all 0.2 linear;
-  font-weight: 500;
 }
 .wrapperCopyright a:hover {
   color: #0f77be;
