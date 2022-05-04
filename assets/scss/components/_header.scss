@@ -314,25 +314,22 @@
   }
 }
 
-// .haveSubMenu {
-//   .haveSubMenu{
-
-//     .linkMainMenu {
-//       svg {
-//         display: none;
-//         width: 12px;
-//       }
-//       height: 12px;
-//       color: $color3;
-//       transition: all 0.5s;
-//     }
-//     &:hover {
-//       svg {
-//         color: $color1;
-//       }
-//     }
-//   }
-// }
+.haveSubMenu {
+  .linkMainMenu {
+    svg {
+      display: none;
+      width: 12px;
+      height: 12px;
+      color: $color3;
+      transition: all 0.5s;
+    }
+    &:hover {
+      svg {
+        color: $color1;
+      }
+    }
+  }
+}
 
 .linkMainMenu {
   display: block;
@@ -455,19 +452,6 @@
   &:hover {
     color: $color1;
     background-color: $color3;
-  }
-}
-
-.haveSubMenu{
-  .haveSubMenuLink{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    svg{
-      height: 12px;
-      width: 12px;
-      margin-inline: 15px;
-    }
   }
 }
 
