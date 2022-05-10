@@ -492,7 +492,8 @@
 /* Mobile & tablet: width <1024px */
 @media only screen and (max-width: 1023px) {
   .wrapperMainMenu {
-    height: 100%;
+    height:80%;
+    overflow: auto;
   }
   .headerContactWrapper {
     display: none;

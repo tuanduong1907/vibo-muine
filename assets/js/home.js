@@ -36,8 +36,11 @@ $(document).ready(function () {
         }
     });
 
-    $(".haveSubMenu").on("click", function () {
-        $(".wrapperSubMenu").slideToggle();
+    $(".haveSubMenu--1").on("click", function () {
+        $(".wrapperSubMenu--1").slideToggle();
+    })
+    $(".haveSubMenu--2").on("click", function () {
+        $(".wrapperSubMenu--2").slideToggle();
     })
 
     $(".buttonMainMenuTopHeader").on("click", function () {
