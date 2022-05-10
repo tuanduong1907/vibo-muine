@@ -13,7 +13,7 @@
 // paging
 @import "../components/pagging";
 // end paging
-
+@import "../components/wrapImgResize";
 .newsListWrapper {
   padding-block: 40px;
   .newsList {
@@ -21,20 +21,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     .newsItem {
-      .newsItemImage {
-        display: block;
-        width: 100%;
-        height: 250px;
+      .newsItemImageWrap {
+        height: 235px;
         overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: all linear 0.2s;
-          &:hover {
-            transform: scale(1.1);
-          }
+        .newsItemImage {
+          overflow: hidden;
+          transition: all linear .25s;
         }
+      }
+      &:hover .newsItemImage {
+        transform: scale(1.1);
       }
       .newItemContent {
         padding: 20px;
@@ -55,8 +51,8 @@
             line-height: 32px;
             text-align: center;
             font-family: $font2;
-            &:hover{
-                color: $color3;
+            &:hover {
+              color: $color3;
             }
           }
         }
@@ -99,47 +95,42 @@
 }
 // Responsive
 /* Mobile & tablet: width <1024px */
-@media only screen and (max-width: 1023px){
-
+@media only screen and (max-width: 1023px) {
 }
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-    .newsListWrapper {
-        padding-block: 30px;
-        .newsList{
-            grid-template-columns: repeat(2, 1fr);
-        }
+  .newsListWrapper {
+    padding-block: 30px;
+    .newsList {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 }
-
 
 /* Mobie: width < 740px */
 @media only screen and (max-width: 739px) {
-    .newsListWrapper {
-        padding-block: 30px;
-        .newsList{
-            grid-template-columns: repeat(1, 1fr);
-            .newsItem {
-                .newItemContent {
-                    padding: 15px;
-                    .newsItemMore,
-                    .newsItemText{
-                        margin-top: 15px;
-                    }
-                }
-            }
+  .newsListWrapper {
+    padding-block: 30px;
+    .newsList {
+      grid-template-columns: repeat(1, 1fr);
+      .newsItem {
+        .newItemContent {
+          padding: 15px;
+          .newsItemMore,
+          .newsItemText {
+            margin-top: 15px;
+          }
         }
+      }
     }
+  }
 }
 
-
 /* PC Low */
-@media (min-width: 1024px) and (max-width: 1239px) { 
-
+@media (min-width: 1024px) and (max-width: 1239px) {
 }
 
 /* PC: width >= 1024px */
 @media only screen and (min-width: 1024px) {
-
 }

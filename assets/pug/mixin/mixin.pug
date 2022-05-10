@@ -165,9 +165,10 @@ mixin render_itemNews(data)
     section.newsListWrapper.container
         ul.newsList
             each item in data
-                li.newsItem 
-                    a(href= item.link title= item.title).newsItemImage
-                        img(src= item.images, alt= item.title)
+                li.newsItem
+                    .newsItemImageWrap 
+                        a(href= item.link title= item.title).wrapImgResize.img16And9.newsItemImage
+                            img(src= item.images, alt= item.title)
                     .newItemContent
                         if  item.author
                             .newsItemAuthor 

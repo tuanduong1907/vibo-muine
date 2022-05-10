@@ -418,6 +418,21 @@
     }
   }
 }
+.haveSubMenu {
+  .haveSubMenuWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .linkMainMenu {
+      flex: 1;
+    }
+    svg {
+      height: 16px;
+      margin-inline: 15px;
+      display: none;
+}
+  }
+}
 // end main menu
 
 // sub menu
@@ -476,7 +491,7 @@
 
 /* Mobile & tablet: width <1024px */
 @media only screen and (max-width: 1023px) {
-  .wrapperMainMenu{
+  .wrapperMainMenu {
     height: 100%;
   }
   .headerContactWrapper {
@@ -491,6 +506,13 @@
   }
   .headerContactItem {
     color: $color3 !important;
+  }
+  .haveSubMenu {
+    .haveSubMenuWrapper {
+      svg {
+        display: flex;
+      }
+    }
   }
 }
 

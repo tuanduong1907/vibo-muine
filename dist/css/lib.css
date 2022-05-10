@@ -14136,6 +14136,20 @@ a.ui-button:active,
     background-color: transparent;
   }
 }
+.haveSubMenu .haveSubMenuWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.haveSubMenu .haveSubMenuWrapper .linkMainMenu {
+  flex: 1;
+}
+.haveSubMenu .haveSubMenuWrapper svg {
+  height: 16px;
+  margin-inline: 15px;
+  display: none;
+}
+
 .wrapperSubMenu {
   display: none;
   position: absolute;
@@ -14208,6 +14222,10 @@ a.ui-button:active,
 
   .headerContactItem {
     color: #0f77be !important;
+  }
+
+  .haveSubMenu .haveSubMenuWrapper svg {
+    display: flex;
   }
 }
 /* Mobie: width < 740px */
